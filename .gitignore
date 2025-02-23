@@ -1,0 +1,76 @@
+# 🚀 Node.js & Turbo Repo
+node_modules/
+.turbo/
+.pnpm-store/
+.yarn/
+.pnp/
+.pnp.js
+.npm/
+
+# 🏗️ Build artifacts
+.next/
+out/
+dist/
+build/
+coverage/
+.tmp/
+
+# 🔑 Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# ⚡ Vercel
+.vercel/
+
+# 🔥 NestJS
+*.tsbuildinfo
+
+# 🚀 Go (Build Artifacts)
+apps/backend/booking-service/bin/
+apps/backend/booking-service/pkg/
+apps/backend/payment-service/bin/
+apps/backend/payment-service/pkg/
+
+# 📦 Rust (Cargo)
+apps/backend/analytics-service/target/
+apps/backend/analytics-service/Cargo.lock
+
+# 🧪 Python (venv)
+apps/backend/analytics-service/ml-pipeline/venv/
+apps/backend/analytics-service/ml-pipeline/__pycache__/
+apps/backend/analytics-service/ml-pipeline/.ipynb_checkpoints/
+
+# 🔍 Logs & Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+*.out
+*.err
+
+# 🏗️ Kubernetes, Docker, & Infra
+docker-compose.override.yml
+*.dockerignore
+.Dockerfile.swp
+kubectl.kubeconfig
+
+# 🛠️ IDE, OS & Misc
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.sublime-project
+*.sublime-workspace
+
+# 🔑 Certificates & Keys
+*.pem
+*.crt
+*.key
+*.pfx
+*.p12
