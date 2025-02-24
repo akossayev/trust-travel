@@ -28,7 +28,8 @@ trust-travel/
 ├── package.json
 ├── README.md
 ├── turbo.json                   # Конфигурация Turborepo
-├── yarn.lock
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
 ```
 
 ## 🚀 Технологический стек
