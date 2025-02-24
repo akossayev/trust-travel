@@ -35,7 +35,7 @@ trust-travel/
 
 | Раздел            | Технологии |
 |------------------|------------|
-| **Frontend**     | Next.js, NestJS (Admin), Rust (Analytics) |
+| **Frontend**     | Next.js |
 | **Backend**      | NestJS, Go, Rust |
 | **База данных**  | PostgreSQL, Redis |
 | **Очереди**      | Kafka, RabbitMQ |
@@ -48,10 +48,16 @@ trust-travel/
 
 1. Установите зависимости:
    ```sh
-   yarn install
+   pnpm install
    ```
-2. Запустите разработку:
+
+2. Установите зависимости:
    ```sh
-   yarn dev
+   npm install -g turbo
+   ```
+   
+3. Запустите разработку:
+   ```sh
+   turbo dev
    ```
 

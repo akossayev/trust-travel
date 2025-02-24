@@ -1,0 +1,12 @@
+{
+  "name": "booking-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "go run cmd/main.go"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
