@@ -1,9 +1,13 @@
 packages:
-  - apps/backend/api-gateway
-  - apps/backend/auth-service
-  - apps/backend/booking-service
-  - apps/backend/notification-service
-  - apps/backend/payment-service
-  - apps/frontend/admin-dashboard
-  - apps/frontend/analytics-dashboard
-  - apps/frontend/client-landing
+  - "apps/backend/api-gateway"
+  - "apps/backend/auth-service"
+  - "apps/backend/booking-service"
+  - "apps/backend/notification-service"
+  - "apps/backend/payment-service"
+  - "apps/frontend/admin-dashboard"
+  - "apps/frontend/analytics-dashboard"
+  - "apps/frontend/client-landing"
+  - "packages/eslint-config"
+  - "packages/tailwind-config"
+  - "packages/typescript-config"
+  - "packages/ui"
