@@ -6,7 +6,7 @@ function ToursCard() {
   return (
     <div
       className="w-[250px] h-[250px] bg-no-repeat bg-cover rounded-[10%] flex flex-col items-center justify-center gap-5"
-      style={{ backgroundImage: 'url(/bgTourCard.png)' }}>
+      style={{ backgroundImage: 'url(/bgMountain.png)' }}>
       <p className="text-foreground flex flex-col items-start mt-[60px] text-lg font-semibold">
         <span>Экспресс тур</span>
         <span>на Озера Кольсай</span>

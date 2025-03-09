@@ -10,23 +10,23 @@ const navList = [
   { id: 5, name: 'Мой кабинет' },
 ];
 
-export default function Home() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   return (
-    <header className="flex justify-between items-center py-8 px-12 w-full ">
+    <header className="flex justify-between items-center py-5 px-8 w-full lg:px-[60px] 2xl:px-[110px]">
       <Image
         src="/logo.svg"
         alt="logo"
-        width={150}
-        height={200}
-        className="max-w-full sm:w-[200px]"
+        width={160}
+        height={0}
+        className="max-w-[60%] lg:w-[200px] 2xl:w-[250px]"
       />
-      <ul className="hidden sm:flex gap-6 ">
+      <ul className="hidden sm:flex sm:gap-4 lg:gap-10">
         {navList.map((elem) => (
           <li
             key={elem.id}
-            className="flex items-center cursor-pointer text-sm md:text-base"
+            className="flex items-center gap-1 text-sm lg:text-xl 2xl:text-2xl cursor-pointer"
             onClick={() => elem.hasDropdown && setIsOpen(!isOpen)}>
             {elem.name}
             {elem.hasDropdown && (
@@ -35,7 +35,6 @@ export default function Home() {
                 alt="dropdown"
                 width={15}
                 height={15}
-                className="ml-1"
               />
             )}
           </li>
@@ -44,9 +43,9 @@ export default function Home() {
       <Image
         src="/burgerMenu.svg"
         alt="logo"
-        width={50}
-        height={50}
-        className="block sm:hidden cursor-pointer"
+        width={30}
+        height={0}
+        className="block max-w-[15%] sm:hidden"
       />
     </header>
   );

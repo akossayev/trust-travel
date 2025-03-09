@@ -361,6 +361,9 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
     devDependencies:
+      '@trust-travel/ui':
+        specifier: workspace:*
+        version: link:../../../packages/ui
       '@types/node':
         specifier: ^20
         version: 20.17.22

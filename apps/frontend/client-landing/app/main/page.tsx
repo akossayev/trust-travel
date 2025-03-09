@@ -13,7 +13,6 @@ import OftenQuestions from '@/components/OftenQuestions';
 export default function MainPage() {
   return (
     <div className="flex flex-col items-center bg-[#fff]">
-      <Header />
       <SelectTour />
       <ChooseTours />
       <ActualToursSlider />
@@ -21,8 +20,7 @@ export default function MainPage() {
       <Tours />
       <OffersText />
       <Partness />
-      {/* <OftenQuestions /> */}
-      <Footer />
+      <OftenQuestions />
     </div>
   );
 }
