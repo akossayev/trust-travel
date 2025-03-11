@@ -39,7 +39,9 @@ export default function ChooseTours() {
       <div className="w-full flex">
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-[12%] md:gap-10 lg:gap-[20px] w-full sm:px-3">
           {choiseTours.map((elem, index) => (
-            <div className="flex sm:gap-[50%] md:gap-[70px] lg:gap-[150px]" key={elem.id}>
+            <div
+              className="flex sm:gap-[50%] md:gap-[70px] lg:gap-[150px] xl:gap-[200px] 2xl:gap-[250px]"
+              key={elem.id}>
               <div className="w-full flex flex-col items-start gap-2 sm:gap-0 ml-[20px] sm:ml-0">
                 <span className="text-foreground xl:text-2xl">{elem.name}</span>
                 <button className="flex justify-between items-center w-[90%] h-[56px] px-7 sm:px-0 bg-foreground sm:bg-transparent text-[#1E1E1E] sm:text-foreground rounded-[40px] sm:gap-2 xl:text-2xl">
