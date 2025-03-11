@@ -4,7 +4,7 @@ import ToursCard from './ToursCard';
 
 export default function Tours() {
   return (
-    <div className="flex flex-col items-center gap-10">
+    <div className="flex flex-col items-center gap-10 mt-[50px]">
       <h2 className="text-2xl font-medium">Туры</h2>
       <div className="flex gap-2 border py-1 px-2 rounded-[30px]">
         <Button className="text-foreground py-3 px-4 bg-[#489FC4] rounded-full w-[200px]">

@@ -14,7 +14,7 @@ export default function ChooseTours() {
   const [clickButton, setClickButton] = useState(false);
 
   return (
-    <div className="mt-[120px] sm:mt-[30px] xl:gap-10 flex flex-col sm:items-center gap-5 bg-gradient-to-r from-[#489FC4] via-[#6FABC5] to-[#489FC4] w-[95%] xl:w-[90%] rounded-[40px] sm:rounded-[30px] py-8 px-4">
+    <div className="mt-[0px] overflow-hidden mx-[10px] max-w-[95%] sm:mt-[30px] xl:gap-10 flex flex-col sm:items-center gap-5 bg-gradient-to-r from-[#489FC4] via-[#6FABC5] to-[#489FC4] xl:mx-5 xl:w-full rounded-[40px] sm:rounded-[30px] sm:max-w-[97%] lg:max-w-[98%] py-8 px-4">
       <div className="flex flex-col sm:flex-row items-center gap-3">
         <button
           className={

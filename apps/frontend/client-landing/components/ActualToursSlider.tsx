@@ -10,6 +10,7 @@ export default function ActualToursSlider() {
         <Image
           src="/slide1.png"
           alt="slide1"
+          loading="lazy"
           width={250}
           height={0}
           className="h-[240px] ml-[-130px] sm2:ml-[-110px] sm3:ml-[-90px] rounded-[40px] lg:ml-0 lg:w-[220px] lg:h-[290px] xl:w-[280px] xl:h-[350px]"
