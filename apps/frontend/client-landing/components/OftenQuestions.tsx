@@ -16,6 +16,7 @@ export default function OftenQuestions() {
             width={50}
             height={50}
             className="ml-[220px] cursor-pointer"
+            loading="lazy"
           />
         </div>
         <div className="bg-[#F5F5F5] p-5 rounded-2xl flex flex-col gap-5 w-[300px] h-auto">
@@ -28,6 +29,7 @@ export default function OftenQuestions() {
             width={50}
             height={50}
             className="ml-[220px] cursor-pointer"
+            loading="lazy"
           />
         </div>
         <div className="bg-[#F5F5F5] p-5 rounded-2xl flex flex-col gap-5 w-[300px] h-auto">
@@ -40,6 +42,7 @@ export default function OftenQuestions() {
             width={50}
             height={50}
             className="ml-[220px] cursor-pointer"
+            loading="lazy"
           />
         </div>
       </div>

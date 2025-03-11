@@ -10,10 +10,10 @@ export default function ActualToursSlider() {
         <Image
           src="/slide1.png"
           alt="slide1"
-          loading="lazy"
           width={250}
           height={0}
           className="h-[240px] ml-[-130px] sm2:ml-[-110px] sm3:ml-[-90px] rounded-[40px] lg:ml-0 lg:w-[220px] lg:h-[290px] xl:w-[280px] xl:h-[350px]"
+          loading="lazy"
         />
         <Image
           src="/slide2.png"
@@ -21,6 +21,7 @@ export default function ActualToursSlider() {
           width={250}
           height={0}
           className="h-[300px] rounded-[30px] lg:w-[280px] lg:h-[380px] xl:w-[340px] xl:h-[440px]"
+          loading="lazy"
         />
         <Image
           src="/slide3.png"
@@ -28,6 +29,7 @@ export default function ActualToursSlider() {
           width={250}
           height={0}
           className="h-[280px] rounded-[35px] lg:w-[230px] lg:h-[330px] xl:w-[290px] xl:h-[390px]"
+          loading="lazy"
         />
         <Image
           src="/slide4.png"
@@ -35,6 +37,7 @@ export default function ActualToursSlider() {
           width={250}
           height={0}
           className="lg:h-[350px] xl:w-[310px] xl:h-[410px]"
+          loading="lazy"
         />
       </div>
 
@@ -45,6 +48,7 @@ export default function ActualToursSlider() {
           width={80}
           height={10}
           className="cursor-pointer lg:hidden"
+          loading="lazy"
         />
         <Image
           src="/arrowRightAdaptive.png"
@@ -52,6 +56,7 @@ export default function ActualToursSlider() {
           width={80}
           height={10}
           className="cursor-pointer lg:hidden"
+          loading="lazy"
         />
         <Image
           src="/arrowLeft.png"
@@ -59,6 +64,7 @@ export default function ActualToursSlider() {
           width={80}
           height={10}
           className="cursor-pointer hidden lg:block"
+          loading="lazy"
         />
         <Image
           src="/arrowRight.png"
@@ -66,6 +72,7 @@ export default function ActualToursSlider() {
           width={80}
           height={10}
           className="cursor-pointer hidden lg:block"
+          loading="lazy"
         />
       </div>
 

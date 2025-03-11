@@ -8,11 +8,11 @@ export default function Partness() {
       <h2 className='text-4xl font-medium'>Партнеры</h2>
       <div className='flex gap-[130px]'>
         <div className="flex flex-col items-center gap-7">
-          <Image src="/innovation.png" alt="innovation-logo" width={200} height={200} />
+          <Image src="/innovation.png" alt="innovation-logo" width={200} height={200} loading="lazy"/>
           <span>Innovation</span>
         </div>
         <div className="flex flex-col items-center gap-7">
-          <Image src="/enactus.png" alt="enactus-logo" width={200} height={200} />
+          <Image src="/enactus.png" alt="enactus-logo" width={200} height={200} loading="lazy"/>
           <span>Enactus</span>
         </div>
       </div>

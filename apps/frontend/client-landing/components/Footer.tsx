@@ -20,6 +20,7 @@ export default function Footer() {
           width={150}
           height={200}
           className="max-w-full sm:w-[200px]"
+          loading="lazy"
         />
         <nav>
           <ul className="grid grid-cols-[1fr_1fr] grid-rows-[1fr_1fr_1fr] gap-y-5 gap-x-[100px] mt-2">
@@ -37,9 +38,9 @@ export default function Footer() {
           <span>trusttravel.contact@gmail.com</span>
         </p>
         <div className="flex gap-5">
-          <Image src="/tgIcon.svg" alt="telegram-logo" width={30} height={100} />
-          <Image src="/instIcon.svg" alt="instagram-logo" width={30} height={100} />
-          <Image src="/tiktokIcon.svg" alt="tiktok-logo" width={30} height={100} />
+          <Image src="/tgIcon.svg" alt="telegram-logo" width={30} height={100} loading="lazy"/>
+          <Image src="/instIcon.svg" alt="instagram-logo" width={30} height={100} loading="lazy"/>
+          <Image src="/tiktokIcon.svg" alt="tiktok-logo" width={30} height={100} loading="lazy"/>
         </div>
       </div>
     </footer>

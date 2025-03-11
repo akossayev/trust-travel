@@ -50,6 +50,7 @@ export default function ChooseTours() {
                     width={20}
                     height={10}
                     className="block sm:hidden"
+                    loading="lazy"
                   />
                   <Image
                     src="/dropDownLight.svg"
@@ -57,6 +58,7 @@ export default function ChooseTours() {
                     width={10}
                     height={10}
                     className="hidden sm:block"
+                    loading="lazy"
                   />
                 </button>
               </div>
@@ -72,12 +74,13 @@ export default function ChooseTours() {
           width={50}
           height={10}
           className="hidden lg:block xl:w-[70px] "
+          loading="lazy"
         />
       </div>
 
       <button className="w-[80%] h-[45px] sm:hidden ml-[25px] mt-[30px] flex items-center justify-center gap-2 bg-white/50 rounded-[30px] text-foreground">
         Найти
-        <Image src="/Search.svg" alt="arrow-down" width={30} height={10} />
+        <Image src="/Search.svg" alt="arrow-down" width={30} height={10} loading="lazy" />
       </button>
     </div>
   );
