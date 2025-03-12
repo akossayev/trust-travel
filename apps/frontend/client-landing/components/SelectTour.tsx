@@ -27,7 +27,7 @@ export default function SelectTour() {
   });
 
   return (
-    <div className="mx-3 h-[550px] sm:h-[520px] lg:h-[840px] xl:h-[700px] 2xl:h-[840px] overflow-hidden">
+    <div className="mx-3 h-[700px] sm:h-[520px] lg:h-[840px] xl:h-[700px] 2xl:h-[840px] overflow-hidden">
       <div
         className="w-full bg-no-repeat min-h-screen bg-cover rounded-[30px] p-[20px] flex flex-col justify-between "
         style={{ backgroundImage: 'url(/bgMountain.png)' }}>

@@ -12,7 +12,7 @@ export default function ActualToursSlider() {
           alt="slide1"
           width={250}
           height={0}
-          className="h-[240px] ml-[-130px] sm2:ml-[-110px] sm3:ml-[-90px] rounded-[40px] lg:ml-0 lg:w-[220px] lg:h-[290px] xl:w-[280px] xl:h-[350px]"
+          className="h-[240px] ml-[-130px] sm2:ml-[-110px] sm3:ml-[-90px] rounded-[40px] lg:ml-0 lg:w-[220px] lg:h-[290px] xl:w-[330px] xl:h-[400px] 2xl:w-[360px] 2xl:h-[430px]"
           loading="lazy"
         />
         <Image
@@ -20,7 +20,7 @@ export default function ActualToursSlider() {
           alt="slide2"
           width={250}
           height={0}
-          className="h-[300px] rounded-[30px] lg:w-[280px] lg:h-[380px] xl:w-[340px] xl:h-[440px]"
+          className="h-[300px] rounded-[30px] lg:w-[280px] lg:h-[380px] xl:w-[390px] xl:h-[490px] 2xl:w-[420px] 2xl:h-[520px] "
           loading="lazy"
         />
         <Image
@@ -28,7 +28,7 @@ export default function ActualToursSlider() {
           alt="slide3"
           width={250}
           height={0}
-          className="h-[280px] rounded-[35px] lg:w-[230px] lg:h-[330px] xl:w-[290px] xl:h-[390px]"
+          className="h-[280px] rounded-[35px] lg:w-[230px] lg:h-[330px] xl:w-[340px] xl:h-[440px] 2xl:w-[370px] 2xl:h-[470px]"
           loading="lazy"
         />
         <Image
@@ -36,7 +36,7 @@ export default function ActualToursSlider() {
           alt="slide4"
           width={250}
           height={0}
-          className="lg:h-[350px] xl:w-[310px] xl:h-[410px]"
+          className="lg:h-[350px] xl:w-[360px] xl:h-[460px] 2xl:w-[390px] 2xl:h-[490px]"
           loading="lazy"
         />
       </div>

@@ -10,9 +10,21 @@ const navList = [
   { id: 5, name: 'Мой кабинет' },
 ];
 
+const toursList = [
+  { id: 1, name: 'Классические туры' },
+  { id: 2, name: 'Тур-программа' },
+  { id: 3, name: 'Кастомные туры' },
+];
+
+const officeList = [
+  { id: 1, name: 'Войти' },
+  { id: 1, name: 'Зарегистрироваться' },
+  { id: 1, name: 'Бизнес-аккаунт' },
+];
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
     <header className="flex justify-between items-center py-5 px-8 w-full lg:px-[60px] 2xl:px-[110px]">
       <Image
