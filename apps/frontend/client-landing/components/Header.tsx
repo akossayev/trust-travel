@@ -1,6 +1,10 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import logo from '@/public/logo.svg';
+import arrowUpDark from '@/public/arrow-up-dark.svg';
+import arrowDownDark from '@/public/arrow-down-dark.svg';
+import burgerMenuMobile from '@/public/burger-menu-mobile.svg';
 
 const navList = [
   { id: 1, name: 'Главная' },
@@ -26,9 +30,9 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center py-5 px-8 w-full lg:px-[60px] 2xl:px-[110px]">
+    <header className="flex justify-between items-center py-5 px-8 w-full lg:px-[60px] 2xl:px-[110px] my-[20px]">
       <Image
-        src="/logo.svg"
+        src={logo}
         alt="logo"
         width={160}
         height={0}
@@ -43,21 +47,23 @@ export default function Header() {
             {elem.name}
             {elem.hasDropdown && (
               <Image
-                src={isOpen ? 'dropUpBlack.svg' : 'dropDownBlack.svg'}
+                src={isOpen ? arrowUpDark : arrowDownDark}
                 alt="dropdown"
                 width={15}
                 height={15}
+                loading="lazy"
               />
             )}
           </li>
         ))}
       </ul>
       <Image
-        src="/burgerMenu.svg"
+        src={burgerMenuMobile}
         alt="logo"
         width={30}
         height={0}
         className="block max-w-[15%] sm:hidden"
+        loading="lazy"
       />
     </header>
   );

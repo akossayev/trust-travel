@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from '../../../../packages/ui/components/ui/button';
-import Image from 'next/image';
 import OffersTextButtons from './OffersTextButtons';
 
 export default function OffersText() {
@@ -19,9 +18,9 @@ export default function OffersText() {
             авторизируйтесь иначните копить
           </p>
         </div>
-        <Button className="rounded-full py-3 px-[60px] text-foreground bg-[radial-gradient(circle,#489FC4,#3771C8)] w-[180px] text-lg">
+        <button className="rounded-full py-3 px-[60px] text-foreground bg-[radial-gradient(circle,#489FC4,#3771C8)] w-[180px] text-lg">
           Хочу!
-        </Button>
+        </button>
       </div>
       <OffersTextButtons />
     </div>

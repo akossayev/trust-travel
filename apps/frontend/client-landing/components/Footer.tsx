@@ -1,5 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import logo from '@/public/logo.svg';
+import tgIcon from '@/public/tg-icon.svg';
+import instIcon from '@/public/inst-icon.svg';
+import tiktokIcon from '@/public/tiktokIcon.svg';
 
 export default function Footer() {
   const navLinks = [
@@ -15,7 +19,7 @@ export default function Footer() {
     <footer className="bg-[#F5F5F5] p-10 w-full">
       <div className="flex items-start gap-[200px]">
         <Image
-          src="/logo.svg"
+          src={logo}
           alt="logo"
           width={150}
           height={200}
@@ -38,9 +42,9 @@ export default function Footer() {
           <span>trusttravel.contact@gmail.com</span>
         </p>
         <div className="flex gap-5">
-          <Image src="/tgIcon.svg" alt="telegram-logo" width={30} height={100} loading="lazy"/>
-          <Image src="/instIcon.svg" alt="instagram-logo" width={30} height={100} loading="lazy"/>
-          <Image src="/tiktokIcon.svg" alt="tiktok-logo" width={30} height={100} loading="lazy"/>
+          <Image src={tgIcon} alt="telegram-logo" width={30} height={100} loading="lazy" />
+          <Image src={instIcon} alt="instagram-logo" width={30} height={100} loading="lazy" />
+          <Image src={tiktokIcon} alt="tiktok-logo" width={30} height={100} loading="lazy" />
         </div>
       </div>
     </footer>

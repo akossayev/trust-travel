@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import questionIcon from '@/public/question.svg';
 
 export default function OftenQuestions() {
   return (
@@ -11,7 +12,7 @@ export default function OftenQuestions() {
             Что можно приобрести во <br /> внутреннем магазине?
           </p>
           <Image
-            src="/questionIcon.svg"
+            src={questionIcon}
             alt="question-icon"
             width={50}
             height={50}
@@ -24,7 +25,7 @@ export default function OftenQuestions() {
             Что можно приобрести во <br /> внутреннем магазине?
           </p>
           <Image
-            src="/questionIcon.svg"
+            src={questionIcon}
             alt="question-icon"
             width={50}
             height={50}
@@ -37,7 +38,7 @@ export default function OftenQuestions() {
             Что можно приобрести во <br /> внутреннем магазине?
           </p>
           <Image
-            src="/questionIcon.svg"
+            src={questionIcon}
             alt="question-icon"
             width={50}
             height={50}

@@ -1,5 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
+import slideTour from '@/public/slide-tour.png';
+import arrowSliderLeftDark from '@/public/arrow-slider-left-dark.svg';
+import arrowSliderRightDark from '@/public/arrow-slider-right-dark.svg';
+import arrowSliderLeftLight from '@/public/arrow-slider-left-light.svg';
+import arrowSliderRightLight from '@/public/arrow-slider-right-light.svg';
 
 export default function ActualToursSlider() {
   return (
@@ -8,7 +13,7 @@ export default function ActualToursSlider() {
 
       <div className="flex items-center gap-5">
         <Image
-          src="/slide1.png"
+          src={slideTour}
           alt="slide1"
           width={250}
           height={0}
@@ -16,7 +21,7 @@ export default function ActualToursSlider() {
           loading="lazy"
         />
         <Image
-          src="/slide2.png"
+          src={slideTour}
           alt="slide2"
           width={250}
           height={0}
@@ -24,7 +29,7 @@ export default function ActualToursSlider() {
           loading="lazy"
         />
         <Image
-          src="/slide3.png"
+          src={slideTour}
           alt="slide3"
           width={250}
           height={0}
@@ -32,7 +37,7 @@ export default function ActualToursSlider() {
           loading="lazy"
         />
         <Image
-          src="/slide4.png"
+          src={slideTour}
           alt="slide4"
           width={250}
           height={0}
@@ -43,7 +48,7 @@ export default function ActualToursSlider() {
 
       <div className="flex gap-[200px] sm2:gap-[240px] sm3:gap-[260px] sm:gap-[400px] md:gap-[480px] lg:gap-[770px] xl:gap-[1000px] absolute top-[250px] lg:top-[280px] xl:top-[310px] ">
         <Image
-          src="/arrowLeftAdaptive.png"
+          src={arrowSliderLeftDark}
           alt=""
           width={80}
           height={10}
@@ -51,7 +56,7 @@ export default function ActualToursSlider() {
           loading="lazy"
         />
         <Image
-          src="/arrowRightAdaptive.png"
+          src={arrowSliderRightDark}
           alt=""
           width={80}
           height={10}
@@ -59,7 +64,7 @@ export default function ActualToursSlider() {
           loading="lazy"
         />
         <Image
-          src="/arrowLeft.png"
+          src={arrowSliderLeftLight}
           alt=""
           width={80}
           height={10}
@@ -67,7 +72,7 @@ export default function ActualToursSlider() {
           loading="lazy"
         />
         <Image
-          src="/arrowRight.png"
+          src={arrowSliderRightLight}
           alt=""
           width={80}
           height={10}

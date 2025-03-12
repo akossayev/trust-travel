@@ -2,6 +2,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { useState } from 'react';
+import arrowDownBlack from '@/public/arrow-down-dark.svg';
+import arrowDownLight from '@/public/arrow-down-light.svg';
+import searchIcon from '@/public/search.svg';
 
 const choiseTours = [
   { id: 1, name: 'Город', button: 'Алматы' },
@@ -47,7 +50,7 @@ export default function ChooseTours() {
                 <button className="flex justify-between items-center w-[90%] h-[56px] px-7 sm:px-0 bg-foreground sm:bg-transparent text-[#1E1E1E] sm:text-foreground rounded-[40px] sm:gap-2 xl:text-2xl">
                   {elem.button}
                   <Image
-                    src="/dropDownBlack.svg"
+                    src={arrowDownBlack}
                     alt="arrow-down"
                     width={20}
                     height={10}
@@ -55,9 +58,9 @@ export default function ChooseTours() {
                     loading="lazy"
                   />
                   <Image
-                    src="/dropDownLight.svg"
+                    src={arrowDownLight}
                     alt="arrow-down"
-                    width={10}
+                    width={20}
                     height={10}
                     className="hidden sm:block"
                     loading="lazy"
@@ -71,7 +74,7 @@ export default function ChooseTours() {
           ))}
         </div>
         <Image
-          src="/searchIcon.svg"
+          src={searchIcon}
           alt="arrow-down"
           width={50}
           height={10}
@@ -82,7 +85,7 @@ export default function ChooseTours() {
 
       <button className="w-[80%] h-[45px] sm:hidden ml-[25px] mt-[30px] flex items-center justify-center gap-2 bg-white/50 rounded-[30px] text-foreground">
         Найти
-        <Image src="/Search.svg" alt="arrow-down" width={30} height={10} loading="lazy" />
+        <Image src={searchIcon} alt="arrow-down" width={30} height={10} loading="lazy" />
       </button>
     </div>
   );
