@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
 import './globals.css';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
+import Footer from '@/app/(landing)/_components/Footer';
+import Header from '@/app/(landing)/_components/Header';
 import Providers from '@/app/providers';
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ export default function RootLayout({
         <Providers>
           <main>{children}</main>
         </Providers>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

@@ -2,9 +2,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { useState } from 'react';
-import arrowDownBlack from '@/public/arrow-down-dark.svg';
+import arrowDownDark from '@/public/arrow-down-dark.svg';
 import arrowDownLight from '@/public/arrow-down-light.svg';
 import searchIcon from '@/public/search.svg';
+import searchMobile from '@/public/search-mobile.svg';
 
 const choiseTours = [
   { id: 1, name: 'Город', button: 'Алматы' },
@@ -50,19 +51,19 @@ export default function ChooseTours() {
                 <button className="flex justify-between items-center w-[90%] h-[56px] px-7 sm:px-0 bg-foreground sm:bg-transparent text-[#1E1E1E] sm:text-foreground rounded-[40px] sm:gap-2 xl:text-2xl">
                   {elem.button}
                   <Image
-                    src={arrowDownBlack}
-                    alt="arrow-down"
+                    src={arrowDownDark}
+                    alt="arrow-down-dark"
                     width={20}
-                    height={10}
-                    className="block sm:hidden"
+                    height={20}
+                    className="w-[20px] h-[20px] block sm:hidden"
                     loading="lazy"
                   />
                   <Image
                     src={arrowDownLight}
                     alt="arrow-down"
                     width={20}
-                    height={10}
-                    className="hidden sm:block"
+                    height={20}
+                    className="w-[20px] h-[20px] hidden sm:block"
                     loading="lazy"
                   />
                 </button>
@@ -77,15 +78,22 @@ export default function ChooseTours() {
           src={searchIcon}
           alt="arrow-down"
           width={50}
-          height={10}
-          className="hidden lg:block xl:w-[70px] "
+          height={50}
+          className="w-[50px] h-[50px] hidden lg:block xl:w-[70px] "
           loading="lazy"
         />
       </div>
 
       <button className="w-[80%] h-[45px] sm:hidden ml-[25px] mt-[30px] flex items-center justify-center gap-2 bg-white/50 rounded-[30px] text-foreground">
         Найти
-        <Image src={searchIcon} alt="arrow-down" width={30} height={10} loading="lazy" />
+        <Image
+          src={searchMobile}
+          alt="arrow-down"
+          width={30}
+          height={30}
+          loading="lazy"
+          className="w-[30px] h-[30px]"
+        />
       </button>
     </div>
   );

@@ -23,7 +23,7 @@ export default function Footer() {
           alt="logo"
           width={150}
           height={200}
-          className="max-w-full sm:w-[200px]"
+          className="max-w-full sm:w-[200px] w-auto h-auto"
           loading="lazy"
         />
         <nav>
@@ -42,9 +42,9 @@ export default function Footer() {
           <span>trusttravel.contact@gmail.com</span>
         </p>
         <div className="flex gap-5">
-          <Image src={tgIcon} alt="telegram-logo" width={30} height={100} loading="lazy" />
-          <Image src={instIcon} alt="instagram-logo" width={30} height={100} loading="lazy" />
-          <Image src={tiktokIcon} alt="tiktok-logo" width={30} height={100} loading="lazy" />
+          <Image src={tgIcon} alt="telegram-logo" width={30} height={100} loading="lazy" className='w-auto h-auto'/>
+          <Image src={instIcon} alt="instagram-logo" width={30} height={100} loading="lazy" className='w-auto h-auto'/>
+          <Image src={tiktokIcon} alt="tiktok-logo" width={30} height={100} loading="lazy"className='w-auto h-auto'/>
         </div>
       </div>
     </footer>

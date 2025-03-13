@@ -33,10 +33,11 @@ export default function Header() {
     <header className="flex justify-between items-center py-5 px-8 w-full lg:px-[60px] 2xl:px-[110px] my-[20px]">
       <Image
         src={logo}
-        alt="logo"
+        alt="logo-icon"
         width={160}
-        height={0}
-        className="max-w-[60%] lg:w-[200px] 2xl:w-[250px]"
+        height={160}
+        className="max-w-[60%] lg:w-[200px] 2xl:w-[250px] h-auto w-auto"
+        loading='lazy'
       />
       <ul className="hidden sm:flex sm:gap-4 lg:gap-10">
         {navList.map((elem) => (
@@ -48,7 +49,7 @@ export default function Header() {
             {elem.hasDropdown && (
               <Image
                 src={isOpen ? arrowUpDark : arrowDownDark}
-                alt="dropdown"
+                alt="dropdown-icon"
                 width={15}
                 height={15}
                 loading="lazy"
@@ -59,9 +60,9 @@ export default function Header() {
       </ul>
       <Image
         src={burgerMenuMobile}
-        alt="logo"
+        alt="burger-menu"
         width={30}
-        height={0}
+        height={30}
         className="block max-w-[15%] sm:hidden"
         loading="lazy"
       />
