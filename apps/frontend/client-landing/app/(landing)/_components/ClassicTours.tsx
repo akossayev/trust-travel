@@ -12,7 +12,7 @@ const toursCards = [
 
 export default function TourCard() {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-[60px]">
       {toursCards.map((elem) => (
         <div
           key={elem.id}

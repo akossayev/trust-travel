@@ -13,7 +13,7 @@ const LandingRoot = () => {
     <React.Fragment>
       {/* <SelectTour /> */}
       {/* <ChooseTours /> */}
-      <ActualToursSlider />
+      {/* <ActualToursSlider /> */}
       {/* <RegisterButton /> */}
       {/* <Tours /> */}
       {/* <OffersText /> */}

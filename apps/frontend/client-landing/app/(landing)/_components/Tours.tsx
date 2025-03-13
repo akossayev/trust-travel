@@ -21,7 +21,7 @@ export default function Tours() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-10 mt-[50px] mb-10 overflow-hidden">
+    <div className="flex flex-col items-center gap-10 mt-[50px] mb-[100px] overflow-hidden">
       <h2 className="text-2xl font-medium">Туры</h2>
 
       <div className="flex flex-col gap-3 border border-[to-bottom,#CACACA,#D7D7D7)] p-5 rounded-[30px] sm:flex-row sm:p-1">
@@ -42,6 +42,10 @@ export default function Tours() {
       {example === 0 && <ToursCards />}
       {example === 1 && <Component1 />}
       {example === 2 && <Component2 />}
+
+      <button className="px-10 py-3 rounded-[30px] text-lg bg-[#489FC4] text-foreground">
+        Подробнее о всех турах
+      </button>
     </div>
   );
 }
