@@ -1,4 +1,7 @@
 'use client';
+
+'use client';
+
 import { useState } from 'react';
 import Image from 'next/image';
 import logo from '@/public/logo.svg';
@@ -6,28 +9,13 @@ import arrowUpDark from '@/public/arrow-up-dark.svg';
 import arrowDownDark from '@/public/arrow-down-dark.svg';
 import burgerMenuMobile from '@/public/burger-menu-mobile.svg';
 
-const navList = [
-  { id: 1, name: 'Главная' },
-  { id: 2, name: 'Фильтр' },
-  { id: 3, name: 'Туры', hasDropdown: true },
-  { id: 4, name: 'Для компании' },
-  { id: 5, name: 'Мой кабинет' },
-];
-
-const toursList = [
-  { id: 1, name: 'Классические туры' },
-  { id: 2, name: 'Тур-программа' },
-  { id: 3, name: 'Кастомные туры' },
-];
-
-const officeList = [
-  { id: 1, name: 'Войти' },
-  { id: 1, name: 'Зарегистрироваться' },
-  { id: 1, name: 'Бизнес-аккаунт' },
-];
+const toursList = ['Классические туры', 'Тур-программа', 'Кастомные туры'];
+const officeList = ['Войти', 'Зарегистрироваться', 'Бизнес-аккаунт'];
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenTour, setIsOpenTour] = useState(false);
+  const [isOpenOffice, setIsOpenOffice] = useState(false);
+  const [activeTypeTour, setActiveTypeTour] = useState(false);
 
   return (
     <header className="flex justify-between items-center py-5 px-8 w-full lg:px-[60px] 2xl:px-[110px] my-[20px]">
@@ -37,27 +25,64 @@ export default function Header() {
         width={160}
         height={160}
         className="max-w-[60%] lg:w-[200px] 2xl:w-[250px] h-auto w-auto"
-        loading='lazy'
+        loading="lazy"
       />
       <ul className="hidden sm:flex sm:gap-4 lg:gap-10">
-        {navList.map((elem) => (
-          <li
-            key={elem.id}
-            className="flex items-center gap-1 text-sm lg:text-xl 2xl:text-2xl cursor-pointer"
-            onClick={() => elem.hasDropdown && setIsOpen(!isOpen)}>
-            {elem.name}
-            {elem.hasDropdown && (
-              <Image
-                src={isOpen ? arrowUpDark : arrowDownDark}
-                alt="dropdown-icon"
-                width={15}
-                height={15}
-                loading="lazy"
-              />
-            )}
-          </li>
-        ))}
+        <li className="text-sm lg:text-xl 2xl:text-2xl cursor-pointer">Главная</li>
+        <li className="text-sm lg:text-xl 2xl:text-2xl cursor-pointer">Фильтр</li>
+        <li
+          className="flex items-center gap-1 text-sm lg:text-xl 2xl:text-2xl cursor-pointer"
+          onClick={() => setIsOpenTour(!isOpenTour)}>
+          Туры
+          <Image
+            src={isOpenTour ? arrowUpDark : arrowDownDark}
+            alt="dropdown-icon"
+            width={15}
+            height={15}
+            loading="lazy"
+          />
+        </li>
+        <li className="text-sm lg:text-xl 2xl:text-2xl cursor-pointer">Для компании</li>
+        <li className="text-sm lg:text-xl 2xl:text-2xl cursor-pointer">Мой кабинет</li>
       </ul>
+      {isOpenTour && (
+        <ul className="flex flex-col items-center gap-1 absolute left-[900px] top-[100px] w-[220px] h-[160px] p-2 rounded-[30px] bg-white/50 backdrop-blur-[30px] shadow-sm border-[1px] border-[#CACACA] text-[#747474]">
+          <li
+            className={
+              !activeTypeTour
+                ? 'py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer'
+                : 'bg-foreground py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer'
+            }
+            onClick={() => setActiveTypeTour(false)}>
+            Классические туры
+          </li>
+          <li
+            className={
+              activeTypeTour
+                ? 'bg-foreground py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer'
+                : 'py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer'
+            }
+            onClick={() => setActiveTypeTour(true)}>
+            Тур-программа
+          </li>
+          <li
+            className={
+              activeTypeTour
+                ? 'bg-foreground py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer'
+                : 'py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer'
+            }
+            onClick={() => setActiveTypeTour(true)}>
+            Кастомные туры
+          </li>
+        </ul>
+      )}
+      {isOpenOffice && (
+        <ul className="flex flex-col">
+          <li>Войти</li>
+          <li>Зарегистрироваться</li>
+          <li>Бизнес-аккаунт</li>
+        </ul>
+      )}
       <Image
         src={burgerMenuMobile}
         alt="burger-menu"
