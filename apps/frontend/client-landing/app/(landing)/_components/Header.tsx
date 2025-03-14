@@ -15,7 +15,7 @@ const officeList = ['Войти', 'Зарегистрироваться', 'Би�
 export default function Header() {
   const [isOpenTour, setIsOpenTour] = useState(false);
   const [isOpenOffice, setIsOpenOffice] = useState(false);
-  const [activeTypeTour, setActiveTypeTour] = useState(false);
+  const [activeTypeTour, setActiveTypeTour] = useState<number | null>(0);
 
   return (
     <header className="flex justify-between items-center py-5 px-8 w-full lg:px-[60px] 2xl:px-[110px] my-[20px]">
@@ -47,33 +47,14 @@ export default function Header() {
       </ul>
       {isOpenTour && (
         <ul className="flex flex-col items-center gap-1 absolute left-[900px] top-[100px] w-[220px] h-[160px] p-2 rounded-[30px] bg-white/50 backdrop-blur-[30px] shadow-sm border-[1px] border-[#CACACA] text-[#747474]">
-          <li
-            className={
-              !activeTypeTour
-                ? 'py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer'
-                : 'bg-foreground py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer'
-            }
-            onClick={() => setActiveTypeTour(false)}>
-            Классические туры
-          </li>
-          <li
-            className={
-              activeTypeTour
-                ? 'bg-foreground py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer'
-                : 'py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer'
-            }
-            onClick={() => setActiveTypeTour(true)}>
-            Тур-программа
-          </li>
-          <li
-            className={
-              activeTypeTour
-                ? 'bg-foreground py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer'
-                : 'py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer'
-            }
-            onClick={() => setActiveTypeTour(true)}>
-            Кастомные туры
-          </li>
+          {toursList.map((elem, index) => (
+            <li
+              key={index}
+              className={`py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer ${activeTypeTour === index ? 'bg-foreground' : ''}`}
+              onClick={() => setActiveTypeTour(index)}>
+              {elem}
+            </li>
+          ))}
         </ul>
       )}
       {isOpenOffice && (
