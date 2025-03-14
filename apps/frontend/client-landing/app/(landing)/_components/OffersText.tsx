@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import arrowButtonText from '@/public/arrow-button-text.svg';
+import arrowButtonText from '../../../public/arrow-button-text.svg';
 
 export default function OffersText() {
   return (

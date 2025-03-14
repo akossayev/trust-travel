@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import arrowButtonBlue from '@/public/arrow-button-blue.svg';
-import planeIcon from '@/public/plane.svg';
+import arrowButtonBlue from '../../../public/arrow-button-blue.svg';
+import planeIcon from '../../../public/plane.svg';
 
 export default function RegisterButton() {
   return (

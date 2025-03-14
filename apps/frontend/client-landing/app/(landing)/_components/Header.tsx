@@ -1,13 +1,10 @@
 'use client';
-
-'use client';
-
 import { useState } from 'react';
 import Image from 'next/image';
-import logo from '@/public/logo.svg';
-import arrowUpDark from '@/public/arrow-up-dark.svg';
-import arrowDownDark from '@/public/arrow-down-dark.svg';
-import burgerMenuMobile from '@/public/burger-menu-mobile.svg';
+import logo from '../../../public/logo.svg';
+import arrowUpDark from '../../../public/arrow-up-dark.svg';
+import arrowDownDark from '../../../public/arrow-down-dark.svg';
+import burgerMenuMobile from '../../../public/burger-menu-mobile.svg';
 
 const toursList = ['Классические туры', 'Тур-программа', 'Кастомные туры'];
 const officeList = ['Войти', 'Зарегистрироваться', 'Бизнес-аккаунт'];

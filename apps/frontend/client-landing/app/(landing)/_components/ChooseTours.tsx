@@ -2,10 +2,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { useState } from 'react';
-import arrowDownDark from '@/public/arrow-down-dark.svg';
-import arrowDownLight from '@/public/arrow-down-light.svg';
-import searchIcon from '@/public/search.svg';
-import searchMobile from '@/public/search-mobile.svg';
+import arrowDownDark from '../../../public/arrow-down-dark.svg';
+import arrowDownLight from '../../../public/arrow-down-light.svg';
+import searchIcon from '../../../public/search.svg';
+import searchMobile from '../../../public/search-mobile.svg';
 
 const choiseTours = [
   { id: 1, name: 'Город', button: 'Алматы' },

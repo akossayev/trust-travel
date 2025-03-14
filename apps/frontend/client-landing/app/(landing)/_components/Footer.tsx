@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '@/public/logo.svg';
-import telegramIcon from '@/public/telegram-icon.svg';
-import instIcon from '@/public/inst-icon.svg';
-import tiktokIcon from '@/public/tiktok-icon.svg';
+import logo from '../../../public/logo.svg';
+import telegramIcon from '../../../public/telegram-icon.svg';
+import instIcon from '../../../public/inst-icon.svg';
+import tiktokIcon from '../../../public/tiktok-icon.svg';
 
 export default function Footer() {
   return (

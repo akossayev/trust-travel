@@ -3,8 +3,8 @@ import React from 'react';
 import Image from 'next/image';
 import SkeletonActiveLesiureCard from './SkeletonActiveLesiureCard';
 import { useQuery } from '@tanstack/react-query';
-import arrowButtonBlue from '@/public/arrow-button-blue.svg';
-import arrowButtonSilver from '@/public/arrow-button-silver.svg';
+import arrowButtonBlue from '../../../public/arrow-button-blue.svg';
+import arrowButtonSilver from '../../../public/arrow-button-silver.svg';
 
 const fetchCards = async () => {
   const res = await fetch('');

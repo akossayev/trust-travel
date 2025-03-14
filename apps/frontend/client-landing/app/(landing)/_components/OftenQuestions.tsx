@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import questionIcon from '@/public/question.svg';
+import questionIcon from '../../../public/question.svg';
 
 export default function OftenQuestions() {
   return (
