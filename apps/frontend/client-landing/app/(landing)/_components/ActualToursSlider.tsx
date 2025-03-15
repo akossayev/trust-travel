@@ -1,10 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import slideTour from '../../../public/slide-tour.png';
-import arrowSliderLeftDark from '../../../public/arrow-slider-left-dark.svg';
-import arrowSliderRightDark from '../../../public/arrow-slider-right-dark.svg';
-import arrowSliderLeftLight from '../../../public/arrow-slider-left-light.svg';
-import arrowSliderRightLight from '../../../public/arrow-slider-right-light.svg';
+
+import ArrowSliderLeftDark from '../svg-icons/ArrowSliderLeftDark';
+import ArrowSliderRightDark from '../svg-icons/ArrowSliderRightDark';
+
+import ArrowSliderLeftLight from '../svg-icons/ArrowSliderLeftLight';
+import ArrowSliderRightLight from '../svg-icons/ArrowSliderRightLight';
 
 export default function ActualToursSlider() {
   return (
@@ -39,38 +41,10 @@ export default function ActualToursSlider() {
       </div>
 
       <div className="flex gap-[200px] sm2:gap-[240px] sm3:gap-[260px] sm:gap-[400px] md:gap-[480px] lg:gap-[770px] xl:gap-[1200px] absolute top-[250px] lg:top-[280px] xl:top-[330px] ">
-        <Image
-          src={arrowSliderLeftDark}
-          alt="arrow-left"
-          width={80}
-          height={80}
-          className="w-[80px] h-[80px] cursor-pointer lg:hidden"
-          loading="lazy"
-        />
-        <Image
-          src={arrowSliderRightDark}
-          alt="arrow-right"
-          width={80}
-          height={80}
-          className="w-[80px] h-[80px] cursor-pointer lg:hidden"
-          loading="lazy"
-        />
-        <Image
-          src={arrowSliderLeftLight}
-          alt="arrow-left"
-          width={80}
-          height={80}
-          className="w-[80px] h-[80px] cursor-pointer hidden lg:block"
-          loading="lazy"
-        />
-        <Image
-          src={arrowSliderRightLight}
-          alt="arrow-right"
-          width={80}
-          height={80}
-          className="w-[80px] h-[80px] cursor-pointer hidden lg:block"
-          loading="lazy"
-        />
+        <ArrowSliderLeftDark className="w-[80px] h-[80px] cursor-pointer lg:hidden" />
+        <ArrowSliderRightDark className="w-[80px] h-[80px] cursor-pointer lg:hidden" />
+        <ArrowSliderLeftLight className="w-[80px] h-[80px] cursor-pointer hidden lg:block" />
+        <ArrowSliderRightLight className="w-[80px] h-[80px] cursor-pointer hidden lg:block" />
       </div>
 
       <button className="mt-[30px] bg-[#489FC4] text-foreground px-[70px] py-4 flex items-center rounded-[30px]">

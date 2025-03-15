@@ -2,10 +2,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { useState } from 'react';
-import arrowDownDark from '../../../public/arrow-down-dark.svg';
-import arrowDownLight from '../../../public/arrow-down-light.svg';
-import searchIcon from '../../../public/search.svg';
-import searchMobile from '../../../public/search-mobile.svg';
+import ArrowDownDark from '../svg-icons/ArrowDownDark';
+import ArrowDownLight from '../svg-icons/ArrowDownLight';
+import SearchIcon from '../svg-icons/SearchIcon';
+import SearchMobile from '../svg-icons/SearchMobile';
 
 const choiseTours = [
   { id: 1, name: 'Город', button: 'Алматы' },
@@ -50,22 +50,12 @@ export default function ChooseTours() {
                 <span className="text-foreground xl:text-2xl">{elem.name}</span>
                 <button className="flex justify-between items-center w-[90%] h-[56px] px-7 sm:px-0 bg-foreground sm:bg-transparent text-[#1E1E1E] sm:text-foreground rounded-[40px] sm:gap-2 xl:text-2xl">
                   {elem.button}
-                  <Image
-                    src={arrowDownDark}
-                    alt="arrow-down-dark"
-                    width={20}
-                    height={20}
-                    className="w-[20px] h-[20px] block sm:hidden"
-                    loading="lazy"
-                  />
-                  <Image
-                    src={arrowDownLight}
-                    alt="arrow-down"
-                    width={20}
-                    height={20}
-                    className="w-[20px] h-[20px] hidden sm:block"
-                    loading="lazy"
-                  />
+                  <div className="block lg:hidden">
+                    <ArrowDownDark />
+                  </div>
+                  <div className="hidden lg:block">
+                    <ArrowDownLight />
+                  </div>
                 </button>
               </div>
               {index < choiseTours.length - 1 && (
@@ -74,26 +64,12 @@ export default function ChooseTours() {
             </div>
           ))}
         </div>
-        <Image
-          src={searchIcon}
-          alt="arrow-down"
-          width={50}
-          height={50}
-          className="w-[50px] h-[50px] hidden lg:block xl:w-[70px] "
-          loading="lazy"
-        />
+        <SearchIcon />
       </div>
 
       <button className="w-[80%] h-[45px] sm:hidden ml-[25px] mt-[30px] flex items-center justify-center gap-2 bg-white/50 rounded-[30px] text-foreground">
         Найти
-        <Image
-          src={searchMobile}
-          alt="arrow-down"
-          width={30}
-          height={30}
-          loading="lazy"
-          className="w-[30px] h-[30px]"
-        />
+        <SearchMobile />
       </button>
     </div>
   );

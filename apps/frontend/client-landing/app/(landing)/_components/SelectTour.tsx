@@ -3,8 +3,8 @@ import React from 'react';
 import Image from 'next/image';
 import SkeletonActiveLesiureCard from './SkeletonActiveLesiureCard';
 import { useQuery } from '@tanstack/react-query';
-import arrowButtonBlue from '../../../public/arrow-button-blue.svg';
-import arrowButtonSilver from '../../../public/arrow-button-silver.svg';
+import ArrowButtonBlue from '../svg-icons/ArrowButtonBlue';
+import ArrowButtonSilver from '../svg-icons/ArrowButtonSilver';
 
 const fetchCards = async () => {
   const res = await fetch('');
@@ -16,9 +16,9 @@ const fetchCards = async () => {
 
 export default function SelectTour() {
   const toursCard = [
-    { id: 1, title: 'Активный отдых', imgSrc: arrowButtonSilver },
-    { id: 2, title: 'Активный отдых', imgSrc: arrowButtonSilver },
-    { id: 3, title: 'Активный отдых', imgSrc: arrowButtonSilver },
+    { id: 1, title: 'Активный отдых', imgSrc: '' },
+    { id: 2, title: 'Активный отдых', imgSrc: '' },
+    { id: 3, title: 'Активный отдых', imgSrc: '' },
   ];
 
   const { data, isLoading, error } = useQuery({
@@ -73,14 +73,7 @@ export default function SelectTour() {
           </div>
 
           <button className="w-[230px] xl:text-xl xl:h-[50px] xl:w-[220px] xl:rounded-[40px] xl:gap-[10px] lg:h-[50px] lg:py-7 lg:px-1 lg:text-xl sm:w-[300px] flex items-center p-1 gap-7 lg:gap-3 sm:gap-[50px] rounded-[30px] bg-white/50 lg:bg-white/90 text-[#489FC4] text-lg border border-[#489FC4] absolute top-[190px] sm:top-[250px] left-[30px] sm2:left-[50px] sm3:left-[70px] sm:left-[22%] md:left-[27%] lg:static">
-            <Image
-              src={arrowButtonBlue}
-              alt="card-button-blue"
-              width={50}
-              height={30}
-              className="w-[50px] h-[30px] xl:w-[50px]"
-              loading="lazy"
-            />
+            <ArrowButtonBlue />
             Выбрать тур
           </button>
         </div>

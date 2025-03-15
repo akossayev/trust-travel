@@ -1,10 +1,10 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import logo from '../../../public/logo.svg';
-import arrowUpDark from '../../../public/arrow-up-dark.svg';
-import arrowDownDark from '../../../public/arrow-down-dark.svg';
-import burgerMenuMobile from '../../../public/burger-menu-mobile.svg';
+import Logo from '../svg-icons/Logo';
+import ArrowUpDark from '../svg-icons/ArrowUpDark';
+import ArrowDownDark from '../svg-icons/ArrowDownDark';
+import BurgerMenuMobile from '../svg-icons/BurgerMenuMobile';
 
 const toursList = ['Классические туры', 'Тур-программа', 'Кастомные туры'];
 const officeList = ['Войти', 'Зарегистрироваться', 'Бизнес-аккаунт'];
@@ -16,14 +16,7 @@ export default function Header() {
 
   return (
     <header className="flex justify-between items-center py-5 px-8 w-full lg:px-[60px] 2xl:px-[110px] my-[20px]">
-      <Image
-        src={logo}
-        alt="logo-icon"
-        width={160}
-        height={160}
-        className="max-w-[60%] lg:w-[200px] 2xl:w-[250px] h-auto w-auto"
-        loading="lazy"
-      />
+      <Logo />
       <ul className="hidden sm:flex sm:gap-4 lg:gap-10">
         <li className="text-sm lg:text-xl 2xl:text-2xl cursor-pointer">Главная</li>
         <li className="text-sm lg:text-xl 2xl:text-2xl cursor-pointer">Фильтр</li>
@@ -31,13 +24,7 @@ export default function Header() {
           className="flex items-center gap-1 text-sm lg:text-xl 2xl:text-2xl cursor-pointer"
           onClick={() => setIsOpenTour(!isOpenTour)}>
           Туры
-          <Image
-            src={isOpenTour ? arrowUpDark : arrowDownDark}
-            alt="dropdown-icon"
-            width={15}
-            height={15}
-            loading="lazy"
-          />
+          {isOpenTour ? <ArrowUpDark /> : <ArrowDownDark />}
         </li>
         <li className="text-sm lg:text-xl 2xl:text-2xl cursor-pointer">Для компании</li>
         <li className="text-sm lg:text-xl 2xl:text-2xl cursor-pointer">Мой кабинет</li>
@@ -61,14 +48,7 @@ export default function Header() {
           <li>Бизнес-аккаунт</li>
         </ul>
       )}
-      <Image
-        src={burgerMenuMobile}
-        alt="burger-menu"
-        width={30}
-        height={30}
-        className="block max-w-[15%] sm:hidden"
-        loading="lazy"
-      />
+      <BurgerMenuMobile className="lg:hidden" />
     </header>
   );
 }

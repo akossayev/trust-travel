@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import questionIcon from '../../../public/question.svg';
+import QuestionIcon from '../svg-icons/QuestionIcon';
 
 export default function OftenQuestions() {
   return (
@@ -11,40 +11,19 @@ export default function OftenQuestions() {
           <p>
             Что можно приобрести во <br /> внутреннем магазине?
           </p>
-          <Image
-            src={questionIcon}
-            alt="question-icon"
-            width={50}
-            height={50}
-            className="ml-[220px] cursor-pointer"
-            loading="lazy"
-          />
+          <QuestionIcon className="ml-[220px] cursor-pointer" />
         </div>
         <div className="bg-[#F5F5F5] p-5 rounded-2xl flex flex-col gap-5 w-[300px] h-auto">
           <p>
             Что можно приобрести во <br /> внутреннем магазине?
           </p>
-          <Image
-            src={questionIcon}
-            alt="question-icon"
-            width={50}
-            height={50}
-            className="ml-[220px] cursor-pointer"
-            loading="lazy"
-          />
+          <QuestionIcon className="ml-[220px] cursor-pointer" />
         </div>
         <div className="bg-[#F5F5F5] p-5 rounded-2xl flex flex-col gap-5 w-[300px] h-auto">
           <p>
             Что можно приобрести во <br /> внутреннем магазине?
           </p>
-          <Image
-            src={questionIcon}
-            alt="question-icon"
-            width={50}
-            height={50}
-            className="ml-[220px] cursor-pointer"
-            loading="lazy"
-          />
+          <QuestionIcon className="ml-[220px] cursor-pointer" />
         </div>
       </div>
     </div>

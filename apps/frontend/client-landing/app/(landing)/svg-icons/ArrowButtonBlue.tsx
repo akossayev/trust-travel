@@ -1,0 +1,23 @@
+import React from 'react';
+
+interface Props {
+  className?: string;
+}
+
+export default function ArrowButtonBlue({ className }: Props) {
+  return (
+    <svg
+      width="50"
+      height="50"
+      viewBox="0 0 50 50"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}>
+      <rect width="50" height="50" rx="25" fill="#489FC4" />
+      <path
+        d="M30.6036 16.9746L30.5373 15.9768L31.5351 15.9105L31.6014 16.9083L30.6036 16.9746ZM18.1823 32.6816C17.8185 33.0972 17.1867 33.1391 16.7712 32.7754C16.3556 32.4116 16.3137 31.7798 16.6775 31.3642L18.1823 32.6816ZM19.2485 16.7266L30.5373 15.9768L30.6699 17.9724L19.381 18.7222L19.2485 16.7266ZM31.6014 16.9083L32.3513 28.1971L30.3556 28.3297L29.6058 17.0408L31.6014 16.9083ZM31.356 17.6332L18.1823 32.6816L16.6775 31.3642L29.8512 16.3159L31.356 17.6332Z"
+        fill="white"
+      />
+    </svg>
+  );
+}

@@ -1,15 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '../../../public/logo.svg';
-import telegramIcon from '../../../public/telegram-icon.svg';
-import instIcon from '../../../public/inst-icon.svg';
-import tiktokIcon from '../../../public/tiktok-icon.svg';
+import Logo from '../svg-icons/Logo';
+import TelegramIcon from '../svg-icons/TelegramIcon';
+import InstIcon from '../svg-icons/InstIcon';
+import TiktokIcon from '../svg-icons/TiktokIcon';
 
 export default function Footer() {
   return (
     <footer className="bg-[#F5F5F5] p-10 w-full flex flex-col mt-[50px]">
       <div className="flex flex-col gap-7 items-start xl:flex-row xl:gap-[150px]">
-        <Image src={logo} alt="logo" width={200} height={100} loading="lazy" />
+        <Logo />
         <p className="flex flex-col gap-5 xl:text-lg">
           <span>О нас</span>
           <span>Фильтр</span>
@@ -27,9 +27,9 @@ export default function Footer() {
           <span>trusttravel.contact@gmail.com</span>
         </p>
         <div className="flex gap-[60px] px-3">
-          <Image src={telegramIcon} alt="telegram-logo" width={50} height={50} loading="lazy" />
-          <Image src={instIcon} alt="instagram-logo" width={50} height={50} loading="lazy" />
-          <Image src={tiktokIcon} alt="tiktok-logo" width={50} height={50} loading="lazy" />
+          <TelegramIcon />
+          <InstIcon />
+          <TiktokIcon />
         </div>
       </div>
     </footer>
