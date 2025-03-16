@@ -5,7 +5,7 @@ import PlaneIcon from '../svg-icons/PlaneIcon';
 
 export default function RegisterButton() {
   return (
-    <div className="flex flex-col items-center mt-[50px] relative">
+    <div className="flex flex-col items-center mt-[0px] relative">
       <p className="flex flex-col items-center mt-[80px] mb-[80px] text-lg xl:text-3xl z-10 font-medium lg:text-2xl">
         <span>Путешествуйте выгодно!</span>
         <span>Регистрируйтесь сейчас и получите</span>
@@ -17,7 +17,7 @@ export default function RegisterButton() {
         Зарегистрироваться
       </button>
 
-      <PlaneIcon className="absolute top-[150px] right-[20px] z-10 sm2:right-[40px] lg:w-[100px] lg:top-[40] lg:left-[830] xl:w-[140px] xl:top-[0] xl:left-[84%]" />
+      <PlaneIcon className=" w-[100px] h-[60px] absolute top-[160px] right-[0px] z-10 sm2:right-[40px] lg:w-[100px] lg:top-[40] lg:left-[830] xl:w-[140px] xl:top-[0] xl:left-[84%]" />
 
       <Image
         src="/bg-plane-line.png"

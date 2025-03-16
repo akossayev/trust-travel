@@ -13,6 +13,7 @@ export default function Header() {
   const [isOpenTour, setIsOpenTour] = useState(false);
   const [isOpenOffice, setIsOpenOffice] = useState(false);
   const [activeTypeTour, setActiveTypeTour] = useState<number | null>(0);
+  const [activeTypeOffice, setActiveTypeOffice] = useState<number | null>(0);
 
   return (
     <header className="flex justify-between items-center py-5 px-8 w-full lg:px-[60px] 2xl:px-[110px] my-[20px]">
@@ -50,8 +51,8 @@ export default function Header() {
           {officeList.map((elem, index) => (
             <li
               key={index}
-              className={`py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer ${activeTypeTour === index ? 'bg-foreground' : ''}`}
-              onClick={() => setActiveTypeTour(index)}>
+              className={`py-1 px-5 rounded-[30px] w-full h-[50px] text-center pt-[10px] cursor-pointer ${activeTypeOffice === index ? 'bg-foreground' : ''}`}
+              onClick={() => setActiveTypeOffice(index)}>
               {elem}
             </li>
           ))}

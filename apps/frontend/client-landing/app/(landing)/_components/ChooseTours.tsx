@@ -64,7 +64,7 @@ export default function ChooseTours() {
             </div>
           ))}
         </div>
-        <SearchIcon />
+        <SearchIcon className="hidden sm:block" />
       </div>
 
       <button className="w-[80%] h-[45px] sm:hidden ml-[25px] mt-[30px] flex items-center justify-center gap-2 bg-white/50 rounded-[30px] text-foreground">

@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
 import { useState } from 'react';
-import ToursCards from './ClassicTours';
-import Component1 from './Component1';
-import Component2 from './Component2';
+import ClassicTours from './ClassicTours';
+import CustomTours from './CustomTours';
+import TourProgramm from './TourProgramm';
 
 export default function Tours() {
   const [selectTypeTour, setSelectTypeTour] = useState<number>(0);
@@ -21,7 +21,7 @@ export default function Tours() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-10 mt-[50px] mb-[100px] overflow-hidden">
+    <div className="flex flex-col items-center gap-10 mt-[100px] mb-[100px] overflow-hidden">
       <h2 className="text-2xl font-medium">Туры</h2>
 
       <div className="flex flex-col gap-3 border border-[to-bottom,#CACACA,#D7D7D7)] p-5 rounded-[30px] sm:flex-row sm:p-1">
@@ -39,9 +39,9 @@ export default function Tours() {
         ))}
       </div>
 
-      {example === 0 && <ToursCards />}
-      {example === 1 && <Component1 />}
-      {example === 2 && <Component2 />}
+      {example === 0 && <ClassicTours />}
+      {example === 1 && <CustomTours />}
+      {example === 2 && <TourProgramm />}
 
       <button className="px-10 py-3 rounded-[30px] text-lg bg-[#489FC4] text-foreground">
         Подробнее о всех турах

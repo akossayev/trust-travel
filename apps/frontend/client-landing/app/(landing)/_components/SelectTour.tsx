@@ -28,7 +28,7 @@ export default function SelectTour() {
   });
 
   return (
-    <div className="mx-3 h-[750px] sm:h-[520px] lg:h-[840px] xl:h-[700px] 2xl:h-[840px] overflow-hidden">
+    <div className="mx-3 h-[950px] sm:h-[520px] lg:h-[840px] xl:h-[700px] 2xl:h-[840px] overflow-hidden">
       <div
         className="w-full bg-no-repeat min-h-screen bg-cover rounded-[30px] p-[20px] flex flex-col justify-between "
         style={{ backgroundImage: 'url(/bg-Mountain.png)' }}>
@@ -62,14 +62,17 @@ export default function SelectTour() {
                 />
               </div>
             ))} */}
-            {isLoading &&
+            {/* {isLoading &&
               toursCard.map((elem) => (
                 <div key={elem.id}>
                   <SkeletonActiveLesiureCard />
                 </div>
               ))}
             {error && <p className="text-red-500">Ошибка: {error.message}</p>}
-            {data && data.slice.map((post: any) => <div key={post.id}></div>)}
+            {data && data.slice.map((post: any) => <div key={post.id}></div>)} */}
+            <SkeletonActiveLesiureCard />
+            <SkeletonActiveLesiureCard />
+            <SkeletonActiveLesiureCard />
           </div>
 
           <button className="w-[230px] xl:text-xl xl:h-[50px] xl:w-[220px] xl:rounded-[40px] xl:gap-[10px] lg:h-[50px] lg:py-7 lg:px-1 lg:text-xl sm:w-[300px] flex items-center p-1 gap-7 lg:gap-3 sm:gap-[50px] rounded-[30px] bg-white/50 lg:bg-white/90 text-[#489FC4] text-lg border border-[#489FC4] absolute top-[190px] sm:top-[250px] left-[30px] sm2:left-[50px] sm3:left-[70px] sm:left-[22%] md:left-[27%] lg:static">

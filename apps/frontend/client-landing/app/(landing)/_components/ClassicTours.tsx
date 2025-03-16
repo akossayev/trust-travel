@@ -9,7 +9,7 @@ const toursCards = [
   { id: 3, imgSrc: '/card-tour.png' },
 ];
 
-export default function TourCard() {
+export default function ClassicTours() {
   return (
     <div className="flex gap-[60px]">
       {toursCards.map((elem) => (
@@ -22,7 +22,7 @@ export default function TourCard() {
             на Озера Кольсай <br /> и Каинды
           </span>
           <button className="flex gap-7 items-center p-1 pr-[20px] bg-white/90 text-[#489FC4] rounded-[30px] w-[200px] h-[50px] sm2:w-[220px] sm2:h-[60px] sm2:text-lg sm2:gap-5 sm:w-[120px] sm:h-[30px] sm:text-xs sm:gap-1 lg:w-[170px] lg:h-[40px] lg:text-sm lg:gap-4 xl:w-[250px] xl:h-[60px] xl:text-lg xl:gap-8">
-            <ArrowButtonBlue className="sm2:w-[50px] sm:w-[20px] lg:w-[35px] xl:w-[50px]" />
+            <ArrowButtonBlue className="w-[40px] h-[40px] sm2:w-[50px] sm:w-[20px] lg:w-[35px] xl:w-[50px]" />
             Выбрать Тур
           </button>
         </div>
