@@ -4,8 +4,8 @@ import QuestionIcon from '../svg-icons/QuestionIcon';
 
 export default function OftenQuestions() {
   return (
-    <div className="flex flex-col items-center gap-5">
-      <h2 className="font-medium text-lg">Часто задаваемые вопросы.</h2>
+    <div className="flex flex-col items-center gap-5 xl:my-[120px]">
+      <h2 className="font-medium text-lg xl:text-4xl">Часто задаваемые вопросы.</h2>
       <div className="flex flex-col gap-8 xl:flex-row">
         <div className="bg-[#F5F5F5] p-5 rounded-2xl flex flex-col gap-5 w-[300px] h-auto">
           <p>

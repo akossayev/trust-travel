@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Partness() {
   return (
-    <div className="flex flex-col items-center gap-10 xl:gap-[80px] mt-[100px] mb-[50px]">
+    <div className="flex flex-col items-center gap-10 xl:gap-[50px] mt-[100px] mb-[50px]">
       <h2 className="xl:text-3xl">Партнеры</h2>
       <div className="flex gap-[120px]">
         <div className="flex flex-col items-center gap-[50px]">

@@ -4,6 +4,8 @@ import './globals.css';
 import Footer from '@/app/(landing)/_components/Footer';
 import Header from '@/app/(landing)/_components/Header';
 import Providers from '@/app/providers';
+import SelectTour from './(landing)/_components/SelectTour';
+import ChooseTours from './(landing)/_components/ChooseTours';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -23,11 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={manrope.className}>
-        <Header />
         <Providers>
+          <Header />
+          <SelectTour />
+          <ChooseTours />
           <main>{children}</main>
+          <Footer />
         </Providers>
-        <Footer />
       </body>
     </html>
   );

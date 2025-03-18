@@ -3,11 +3,13 @@ import React from 'react';
 import { useState } from 'react';
 import ClassicTours from './ClassicTours';
 import CustomTours from './CustomTours';
-import TourProgramm from './TourProgramm';
+import TourProgramm from './ToursProgramm';
+import { useRouter } from 'next/navigation';
 
 export default function Tours() {
   const [selectTypeTour, setSelectTypeTour] = useState<number>(0);
   const [example, setExample] = useState(0);
+  const router = useRouter();
 
   const typeTour = [
     { id: 0, name: 'Классические туры' },
@@ -21,7 +23,7 @@ export default function Tours() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-10 mt-[100px] mb-[100px] overflow-hidden">
+    <div className="flex flex-col items-center gap-10 mt-[100px] mb-[100px] overflow-hidden xl:mt-[150px]">
       <h2 className="text-2xl font-medium">Туры</h2>
 
       <div className="flex flex-col gap-3 border border-[to-bottom,#CACACA,#D7D7D7)] p-5 rounded-[30px] sm:flex-row sm:p-1">
@@ -43,7 +45,9 @@ export default function Tours() {
       {example === 1 && <CustomTours />}
       {example === 2 && <TourProgramm />}
 
-      <button className="px-10 py-3 rounded-[30px] text-lg bg-[#489FC4] text-foreground">
+      <button
+        className="px-10 py-3 rounded-[30px] text-lg bg-[#489FC4] text-foreground"
+        onClick={() => router.push('/tours')}>
         Подробнее о всех турах
       </button>
     </div>

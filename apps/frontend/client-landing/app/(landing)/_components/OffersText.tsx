@@ -15,7 +15,7 @@ export default function OffersText() {
               авторизируйтесь и начните копить
             </p>
           </div>
-          <button className="w-[330px] xl:w-[200px] h-[55px] text-foreground text-xl rounded-[30px] xl:rounded-[35px] border border-[#C8C8C8] bg-gradient-to-r from-[#489FC4] to-[#3771C8]">
+          <button className="w-[300px] xl:w-[200px] h-[55px] text-foreground text-xl rounded-[30px] xl:rounded-[35px] border border-[#C8C8C8] bg-gradient-to-r from-[#489FC4] to-[#3771C8]">
             Хочу!
           </button>
         </div>

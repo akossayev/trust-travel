@@ -18,13 +18,13 @@ export default function ChooseTours() {
   const [clickButton, setClickButton] = useState(false);
 
   return (
-    <div className="mt-[0px] overflow-hidden mx-[10px] max-w-[95%] sm:mt-[30px] xl:gap-10 flex flex-col sm:items-center gap-5 bg-gradient-to-r from-[#489FC4] via-[#6FABC5] to-[#489FC4] xl:mx-5 xl:w-full rounded-[40px] sm:rounded-[30px] sm:max-w-[97%] lg:max-w-[98%] py-8 px-4">
-      <div className="flex flex-col sm:flex-row items-center gap-3">
+    <div className="my-[30px] lg:my-0 overflow-hidden mx-[10px] max-w-[95%] xl:gap-10 flex flex-col items-center sm:items-center gap-5 bg-gradient-to-r from-[#489FC4] via-[#6FABC5] to-[#489FC4] xl:mx-5 xl:w-full rounded-[40px] sm:rounded-[30px] sm:max-w-[97%] lg:max-w-[98%] py-10 px-4">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full ">
         <button
           className={
             !clickButton
-              ? 'w-[90%] h-[50px] sm:w-[150px] xl:w-[250px] sm:h-[40px] rounded-[40px] bg-foreground text-[#747474] text-sm xl:text-lg'
-              : 'w-[90%] h-[50px] sm:w-[150px] xl:w-[250px] sm:h-[40px] rounded-[40px] bg-transparent text-foreground border border-foreground text-sm xl:text-lg'
+              ? 'w-[90%] h-[50px] sm:w-[150px] xl:w-[250px] rounded-[40px] bg-foreground text-[#747474] text-sm xl:text-lg'
+              : 'w-[90%] h-[50px] sm:w-[150px] xl:w-[250px] rounded-[40px] bg-transparent text-foreground border border-foreground text-sm xl:text-lg'
           }
           onClick={() => setClickButton(false)}>
           Подбор туров
@@ -32,28 +32,28 @@ export default function ChooseTours() {
         <button
           className={
             clickButton
-              ? 'w-[90%] h-[50px] sm:w-[300px] xl:w-[400px] sm:h-[40px] rounded-[40px] bg-foreground text-[#747474] text-xs xl:text-lg'
-              : 'w-[90%] h-[50px] sm:w-[300px] xl:w-[400px] sm:h-[40px] rounded-[40px] bg-transparent text-foreground text-xs border border-foreground xl:text-lg'
+              ? 'w-[90%] h-[50px] sm:w-[300px] xl:w-[400px] rounded-[40px] bg-foreground text-[#747474] text-xs xl:text-lg'
+              : 'w-[90%] h-[50px] sm:w-[300px] xl:w-[400px] rounded-[40px] bg-transparent text-foreground text-xs border border-foreground xl:text-lg'
           }
           onClick={() => setClickButton(true)}>
           Подбор достопримечательностей
         </button>
       </div>
 
-      <div className="w-full flex">
-        <div className="flex flex-col gap-4 sm:flex-row sm:gap-[12%] md:gap-10 lg:gap-[20px] w-full sm:px-3">
+      <div className="w-full flex items-center">
+        <div className="flex flex-col gap-4 sm:flex-row sm:gap-[12%] md:gap-5 lg:gap-[20px] w-full sm:px-3">
           {choiseTours.map((elem, index) => (
             <div
-              className="flex sm:gap-[50%] md:gap-[70px] lg:gap-[150px] xl:gap-[200px] 2xl:gap-[250px]"
+              className="flex sm:gap-[50%] md:gap-[70px] lg:gap-[140px] xl:gap-[200px] 2xl:gap-[250px]"
               key={elem.id}>
-              <div className="w-full flex flex-col items-start gap-2 sm:gap-0 ml-[20px] sm:ml-0">
-                <span className="text-foreground xl:text-2xl">{elem.name}</span>
-                <button className="flex justify-between items-center w-[90%] h-[56px] px-7 sm:px-0 bg-foreground sm:bg-transparent text-[#1E1E1E] sm:text-foreground rounded-[40px] sm:gap-2 xl:text-2xl">
+              <div className="w-full flex flex-col items-start justify-between gap-2 sm:gap-0 ml-[20px] sm:ml-0">
+                <span className="text-foreground text-sm xl:text-2xl">{elem.name}</span>
+                <button className="text-sm flex justify-between items-center w-[95%] h-[56px] px-7 sm:px-0 bg-foreground sm:bg-transparent text-[#1E1E1E] sm:text-foreground rounded-[40px] sm:gap-2 xl:text-2xl">
                   {elem.button}
-                  <div className="block lg:hidden">
+                  <div className="block sm:hidden">
                     <ArrowDownDark />
                   </div>
-                  <div className="hidden lg:block">
+                  <div className="hidden sm:block">
                     <ArrowDownLight />
                   </div>
                 </button>
@@ -64,10 +64,10 @@ export default function ChooseTours() {
             </div>
           ))}
         </div>
-        <SearchIcon className="hidden sm:block" />
+        <SearchIcon className="hidden sm:block w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] xl:h-[90px] xl:w-[90px] cursor-pointer" />
       </div>
 
-      <button className="w-[80%] h-[45px] sm:hidden ml-[25px] mt-[30px] flex items-center justify-center gap-2 bg-white/50 rounded-[30px] text-foreground">
+      <button className="w-[80%] h-[55px] sm:hidden mt-[30px] flex items-center justify-center gap-2 bg-white/50 rounded-[30px] text-foreground cursor-pointer">
         Найти
         <SearchMobile />
       </button>

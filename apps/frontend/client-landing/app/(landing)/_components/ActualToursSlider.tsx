@@ -40,9 +40,9 @@ export default function ActualToursSlider() {
         />
       </div>
 
-      <div className="flex gap-[200px] sm2:gap-[240px] sm3:gap-[260px] sm:gap-[400px] md:gap-[480px] lg:gap-[770px] xl:gap-[1200px] absolute top-[250px] lg:top-[280px] xl:top-[330px] ">
-        <ArrowSliderLeftDark className="w-[80px] h-[80px] cursor-pointer lg:hidden" />
-        <ArrowSliderRightDark className="w-[80px] h-[80px] cursor-pointer lg:hidden" />
+      <div className="flex justify-between w-full absolute top-[250px] lg:top-[280px] lg:justify-around lg:gap-[75%] xl:top-[330px] ">
+        <ArrowSliderLeftDark className="w-[100px] h-[100px] cursor-pointer lg:hidden" />
+        <ArrowSliderRightDark className="w-[100px] h-[100px] cursor-pointer lg:hidden" />
         <ArrowSliderLeftLight className="w-[80px] h-[80px] cursor-pointer hidden lg:block" />
         <ArrowSliderRightLight className="w-[80px] h-[80px] cursor-pointer hidden lg:block" />
       </div>
