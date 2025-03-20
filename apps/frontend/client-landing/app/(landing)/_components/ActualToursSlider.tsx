@@ -47,7 +47,7 @@ export default function ActualToursSlider() {
         <ArrowSliderRightLight className="w-[80px] h-[80px] cursor-pointer hidden lg:block" />
       </div>
 
-      <button className="mt-[30px] bg-[#489FC4] text-foreground px-[70px] py-4 flex items-center rounded-[30px]">
+      <button className="mt-[30px] bg-[#489FC4] text-white px-[70px] py-4 flex items-center rounded-[30px]">
         Подробнее о всех турах
       </button>
     </div>

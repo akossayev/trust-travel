@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import QuestionIcon from '../svg-icons/QuestionIcon';
 
 export default function OftenQuestions() {

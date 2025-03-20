@@ -1,35 +1,26 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
-import SkeletonActiveLesiureCard from './SkeletonActiveLesiureCard';
 import ArrowButtonBlue from '../svg-icons/ArrowButtonBlue';
 import ArrowButtonSilver from '../svg-icons/ArrowButtonSilver';
 
 export default function SelectTour() {
-  const toursCard = [
-    { id: 1, title: 'Активный отдых', imgSrc: '' },
-    { id: 2, title: 'Активный отдых', imgSrc: '' },
-    { id: 3, title: 'Активный отдых', imgSrc: '' },
-  ];
-
   return (
-    <div className="mx-5 h-[600px] sm2:h-[650px] lg:h-[750px] sm3:h-[700px] overflow-hidden">
+    <div className="h-[460px] xs:h-[590px] xs2:h-[630px] xs3:h-[670px] lg:h-[613px] overflow-x-hidden mt-[10px]">
       <div
-        className="w-full bg-no-repeat h-[80%] lg:h-[95%] bg-cover rounded-[30px] py-[30px] px-[20px] flex flex-col justify-between "
+        className="flex flex-col justify-between w-[95%] h-[380px] xs:h-[510px] xs2:h-[550px] xs3:h-[590px] lg:h-[613px] mx-auto py-[20px] lg:py-[30px] lg:pl-[30px] pl-[20px] rounded-[30px] bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: 'url(/bg-Mountain.png)' }}>
-        <h1 className="text-xl sm2:text-2xl sm3:text-[26px] lg:text-4xl xl:text-[54px] text-foreground font-semibold">
-          Путешествуйте <br /> с удовольствием, выбирайте <br />
-          TrusTTravel!
-        </h1>
-        <div className="flex flex-col items-center relative lg:static lg:flex-row-reverse lg:items-end lg:justify-between">
-          <div className="flex gap-3 ml-[55%] lg:m-0 lg:mr-[-8%]">
-            <SkeletonActiveLesiureCard />
-            <SkeletonActiveLesiureCard />
-            <SkeletonActiveLesiureCard />
+        <h2 className="text-white font-semibold leading-[20px] xs:text-xl xs1:text-[22px] xs2:text-2xl lg:text-4xl xl:text-5xl lx:text-[52px] lx:font-bold xs3:text-[27px] xs3:leading-[33px] lg:leading-[50px] xl:leading-[65px] xs:leading-[28px]">
+          Путешествуйте <br /> с удовольствием, выбирайте <br /> TrusTTravel!
+        </h2>
+        <div className="flex flex-col relative sm:flex-row-reverse sm:justify-between sm:items-end sm:static">
+          <div className="flex gap-2 absolute bottom-0 left-[45px] xs1:left-[55px] sm:static sm:mr-[-50px]">
+            <div className="w-[100px] xs:w-[125px] xs2:w-[140px] lg:w-[180px] lx:w-[208px] h-[115px] xs:h-[130px] xs2:h-[150px] lg:h-[200px] lx:h-[223px] rounded-[20px] bg-[#fff]/50"></div>
+            <div className="w-[100px] xs:w-[125px] xs2:w-[140px] lg:w-[180px] lx:w-[208px] h-[115px] xs:h-[130px] xs2:h-[150px] lg:h-[200px] lx:h-[223px] rounded-[20px] bg-[#fff]/50"></div>
+            <div className="w-[100px] xs:w-[125px] xs2:w-[140px] lg:w-[180px] lx:w-[208px] h-[115px] xs:h-[130px] xs2:h-[150px] lg:h-[200px] lx:h-[223px] rounded-[20px] bg-[#fff]/50"></div>
           </div>
-          <button className="text-[#489FC4] text-lg border border-[#489FC4] rounded-[30px] sm3:rounded-[35px] py-[3px] px-[3px] flex items-center gap-[40px] pr-[50px] absolute top-[210px] sm2:top-[220px]  sm2:gap-[50px] sm2:pr-[60px] sm3:text-xl sm:top-[280px] lg:static lg:bg-white/90 lg:gap-[15px] lg:pr-[25px]">
-            <ArrowButtonBlue className="w-[50px] h-[50px] sm3:w-[60px] sm3:h-[60px] lg:w-[45px] lg:h-[45px]" />{' '}
-            Выбрать тур
+          <button className="flex items-center gap-[25px] xs:gap-[20px] pr-[25px] pl-[3px] py-[3px] xs:pl-[4px] xs:py-[4px] rounded-[60px] text-lightblue border border-lightblue absolute bottom-[-100px] ml-[30px] xs:ml-[50px] xs:text-lg xs1:pr-[35px] xs1:gap-[30px] xs2:pr-[40px] xs2:gap-[35px] xs3:ml-[80px] sm:static sm:py-5 sm:gap-2 sm:ml-0 sm:h-[50px] sm:border-0 sm:bg-[#fff]/90 sm:text-base lg:text-xl lg:pr-[20px] lg:gap-[15px] lx:h-[60px] lx:pl-[6px] lx:text-[22px] lx:pr-[30px]">
+            <ArrowButtonBlue className="w-[40px] xs:w-[50px] h-[40px] xs:h-[50px] lg:w-[40px] lg:h-[40px] lx:w-[50px] lx:h-[50px]" />
+            Выбрать Тур
           </button>
         </div>
       </div>

@@ -1,76 +1,82 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
 import { useState } from 'react';
 import ArrowDownDark from '../svg-icons/ArrowDownDark';
 import ArrowDownLight from '../svg-icons/ArrowDownLight';
-import SearchIcon from '../svg-icons/SearchIcon';
 import SearchMobile from '../svg-icons/SearchMobile';
-
-const choiseTours = [
-  { id: 1, name: 'Город', button: 'Алматы' },
-  { id: 2, name: 'Тип тура', button: 'Водный' },
-  { id: 3, name: 'Дата', button: 'Любое' },
-  { id: 4, name: 'Кол-во людей', button: 'Взрослые' },
-];
+import SearchIcon from '../svg-icons/SearchIcon';
 
 export default function ChooseTours() {
-  const [clickButton, setClickButton] = useState(false);
-
   return (
-    <div className="my-[30px] lg:my-0 overflow-hidden mx-[10px] max-w-[95%] xl:gap-10 flex flex-col items-center sm:items-center gap-5 bg-gradient-to-r from-[#489FC4] via-[#6FABC5] to-[#489FC4] xl:mx-5 xl:w-full rounded-[40px] sm:rounded-[30px] sm:max-w-[97%] lg:max-w-[98%] py-10 px-4">
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full ">
-        <button
-          className={
-            !clickButton
-              ? 'w-[90%] h-[50px] sm:w-[150px] xl:w-[250px] rounded-[40px] bg-foreground text-[#747474] text-sm xl:text-lg'
-              : 'w-[90%] h-[50px] sm:w-[150px] xl:w-[250px] rounded-[40px] bg-transparent text-foreground border border-foreground text-sm xl:text-lg'
-          }
-          onClick={() => setClickButton(false)}>
+    <div className="flex flex-col items-center gap-5 w-[95%] mx-auto mt-[30px] xs:mt-[20px] rounded-[40px] bg-lightblue h-auto py-8 xs2:py-9 xs3:py-10 bg-gradient-to-r from-[#489FC4] via-[#6FABC5] to-[#489FC4]">
+      <div className="flex flex-col lg:flex-row items-center gap-2">
+        <button className="text-[#747474] text-xs xs:text-sm xs3:text-lg bg-white rounded-[60px] w-[260px] h-[45px] xs:w-[300px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-[250px] xs3:h-[55px] lg:h-[50px] xs:h-[50px]">
           Подбор туров
         </button>
-        <button
-          className={
-            clickButton
-              ? 'w-[90%] h-[50px] sm:w-[300px] xl:w-[400px] rounded-[40px] bg-foreground text-[#747474] text-xs xl:text-lg'
-              : 'w-[90%] h-[50px] sm:w-[300px] xl:w-[400px] rounded-[40px] bg-transparent text-foreground text-xs border border-foreground xl:text-lg'
-          }
-          onClick={() => setClickButton(true)}>
+        <button className="text-white text-xs xs:text-sm xs3:text-lg border border-white rounded-[60px] w-[260px] h-[45px] xs:w-[300px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-[350px] xs3:h-[55px] lg:h-[50px] xs:h-[50px]">
           Подбор достопримечательностей
         </button>
       </div>
-
-      <div className="w-full flex items-center">
-        <div className="flex flex-col gap-4 sm:flex-row sm:gap-[12%] md:gap-5 lg:gap-[20px] w-full sm:px-3">
-          {choiseTours.map((elem, index) => (
-            <div
-              className="flex sm:gap-[50%] md:gap-[70px] lg:gap-[140px] xl:gap-[200px] 2xl:gap-[250px]"
-              key={elem.id}>
-              <div className="w-full flex flex-col items-start justify-between gap-2 sm:gap-0 ml-[20px] sm:ml-0">
-                <span className="text-foreground text-sm xl:text-2xl">{elem.name}</span>
-                <button className="text-sm flex justify-between items-center w-[95%] h-[56px] px-7 sm:px-0 bg-foreground sm:bg-transparent text-[#1E1E1E] sm:text-foreground rounded-[40px] sm:gap-2 xl:text-2xl">
-                  {elem.button}
-                  <div className="block sm:hidden">
-                    <ArrowDownDark />
-                  </div>
-                  <div className="hidden sm:block">
-                    <ArrowDownLight />
-                  </div>
-                </button>
-              </div>
-              {index < choiseTours.length - 1 && (
-                <div className="hidden border border-foreground sm:block md:h-[80px]"></div>
-              )}
+      <div className="flex flex-col lg:flex-row lg:justify-between lg:w-[95%] items-center gap-2 lg:mt-[30px]">
+        <div className="flex flex-col lg:flex-row gap-2 items-center lg:justify-between lg:w-[80%]">
+          <div className="flex items-center gap-[80px]">
+            <div className="flex flex-col items-start gap-2 lg:gap-3">
+              <span className="text-white text-sm xs:text-base xs3:text-lg lg:text-xl">Город</span>
+              <button className="w-[260px] h-[50px] xs:w-[300px] xs:h-[55px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-auto lg:h-auto xs3:h-[60px] text-dark lg:text-white lg:gap-4 text-sm xs:text-base xs3:text-lg lg:text-xl bg-white lg:bg-transparent rounded-[40px] flex items-center justify-between px-6 lg:px-0">
+                Алматы
+                <ArrowDownDark className="w-[14px] h-auto block lg:hidden" />
+                <ArrowDownLight className="w-[14px] h-auto hidden lg:block" />
+              </button>
             </div>
-          ))}
-        </div>
-        <SearchIcon className="hidden sm:block w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] xl:h-[90px] xl:w-[90px] cursor-pointer" />
-      </div>
+            <div className="hidden lg:block border border-white h-[90px] w-[1px]"></div>
+          </div>
 
-      <button className="w-[80%] h-[55px] sm:hidden mt-[30px] flex items-center justify-center gap-2 bg-white/50 rounded-[30px] text-foreground cursor-pointer">
-        Найти
-        <SearchMobile />
-      </button>
+          <div className="flex items-center gap-[80px]">
+            <div className="flex flex-col items-start gap-2 lg:gap-3">
+              <span className="text-white text-sm xs:text-base xs3:text-lg lg:text-xl">
+                Тип тура
+              </span>
+              <button className="w-[260px] h-[50px] xs:w-[300px] xs:h-[55px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-auto lg:h-auto xs3:h-[60px] text-dark lg:text-white lg:gap-4 text-sm xs:text-base xs3:text-lg lg:text-xl bg-white lg:bg-transparent rounded-[40px] flex items-center justify-between px-6 lg:px-0">
+                Водный
+                <ArrowDownDark className="w-[14px] h-auto block lg:hidden" />
+                <ArrowDownLight className="w-[14px] h-auto hidden lg:block" />
+              </button>
+            </div>
+            <div className="hidden lg:block border border-white h-[90px] w-[1px]"></div>
+          </div>
+
+          <div className="flex items-center gap-[80px]">
+            <div className="flex flex-col items-start gap-2 lg:gap-3">
+              <span className="text-white text-sm xs:text-base xs3:text-lg lg:text-xl">Дата</span>
+              <button className="w-[260px] h-[50px] xs:w-[300px] xs:h-[55px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-auto lg:h-auto xs3:h-[60px] text-dark lg:text-white lg:gap-4 text-sm xs:text-base xs3:text-lg lg:text-xl bg-white lg:bg-transparent rounded-[40px] flex items-center justify-between px-6 lg:px-0">
+                Любое
+                <ArrowDownDark className="w-[14px] h-auto block lg:hidden" />
+                <ArrowDownLight className="w-[14px] h-auto hidden lg:block" />
+              </button>
+            </div>
+            <div className="hidden lg:block border border-white h-[90px] w-[1px]"></div>
+          </div>
+
+          <div className="flex flex-col items-start gap-2 lg:gap-3">
+            <span className="text-white text-sm xs:text-base xs3:text-lg lg:text-xl">
+              Кол-во людей
+            </span>
+            <button className="w-[260px] h-[50px] xs:w-[300px] xs:h-[55px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-auto lg:h-auto xs3:h-[60px] text-dark lg:text-white lg:gap-4 text-sm xs:text-base xs3:text-lg lg:text-xl bg-white lg:bg-transparent rounded-[40px] flex items-center justify-between px-6 lg:px-0">
+              Взрослые
+              <ArrowDownDark className="w-[14px] h-auto block lg:hidden" />
+              <ArrowDownLight className="w-[14px] h-auto hidden lg:block" />
+            </button>
+          </div>
+        </div>
+
+        <button className="bg-[#fff]/50 flex items-center justify-center rounded-[60px] gap-3 text-sm text-white mt-[20px] w-[210px] h-[40px] xs:text-base xs:w-[260px] xs:h-[45px] xs1:w-[270px] xs2:w-[300px] xs3:w-[340px] xs3:h-[50px] xs3:text-lg lg:hidden">
+          Найти
+          <SearchMobile className="block lg:hidden" />
+        </button>
+        <button>
+          <SearchIcon className="hidden lg:block w-[80px] h-[80px]" />
+        </button>
+      </div>
     </div>
   );
 }

@@ -3,7 +3,6 @@ import React from 'react';
 import { useState } from 'react';
 import ClassicTours from './ClassicTours';
 import CustomTours from './CustomTours';
-import TourProgramm from './ToursProgramm';
 import { useRouter } from 'next/navigation';
 
 export default function Tours() {
@@ -32,7 +31,7 @@ export default function Tours() {
             key={elem.id}
             className={
               selectTypeTour === elem.id
-                ? 'text-foreground py-3 px-4 bg-[#489FC4] rounded-full w-[230px] h-[50px] sm2:w-[260px] sm2:h-[65px] sm2:text-lg sm:w-[150px] sm:h-[40px] sm:text-xs lg:w-[190px] xl:w-[250px] xl:h-[50px] xl:text-lg'
+                ? 'text-white py-3 px-4 bg-[#489FC4] rounded-full w-[230px] h-[50px] sm2:w-[260px] sm2:h-[65px] sm2:text-lg sm:w-[150px] sm:h-[40px] sm:text-xs lg:w-[190px] xl:w-[250px] xl:h-[50px] xl:text-lg'
                 : 'text-background py-3 px-4 bg-[radial-gradient(#FFFFFF,#E8E8E8)] backdrop-blur-[50px] rounded-full w-[230px] h-[50px] sm2:w-[260px] sm2:h-[65px] sm2:text-lg sm:w-[150px] sm:h-[40px] sm:text-xs lg:w-[190px] xl:w-[250px] xl:h-[50px] xl:text-lg'
             }
             onClick={() => test(elem.id)}>
@@ -43,10 +42,9 @@ export default function Tours() {
 
       {example === 0 && <ClassicTours />}
       {example === 1 && <CustomTours />}
-      {example === 2 && <TourProgramm />}
 
       <button
-        className="px-10 py-3 rounded-[30px] text-lg bg-[#489FC4] text-foreground"
+        className="px-10 py-3 rounded-[30px] text-lg bg-[#489FC4] text-white"
         onClick={() => router.push('/tours')}>
         Подробнее о всех турах
       </button>

@@ -21,7 +21,7 @@ export default function Partness() {
           <span>Innovation</span>
         </div>
       </div>
-      <button className="bg-[#489FC4] text-foreground w-[300px] h-[50px] rounded-[30px] mt-[50px]">
+      <button className="bg-[#489FC4] text-white w-[300px] h-[50px] rounded-[30px] mt-[50px]">
         Подробнее о Партнерах
       </button>
     </div>
