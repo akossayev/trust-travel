@@ -10,58 +10,62 @@ export default function ChooseTours() {
   return (
     <div className="flex flex-col items-center gap-5 w-[95%] mx-auto mt-[30px] xs:mt-[20px] rounded-[40px] bg-lightblue h-auto py-8 xs2:py-9 xs3:py-10 bg-gradient-to-r from-[#489FC4] via-[#6FABC5] to-[#489FC4]">
       <div className="flex flex-col lg:flex-row items-center gap-2">
-        <button className="text-[#747474] text-xs xs:text-sm xs3:text-lg bg-white rounded-[60px] w-[260px] h-[45px] xs:w-[300px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-[250px] xs3:h-[55px] lg:h-[50px] xs:h-[50px]">
+        <button className="text-[#747474] lg:text-base text-xs xs:text-sm xs3:text-lg bg-white rounded-[60px] w-[260px] h-[45px] xs:w-[300px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-[250px] xs3:h-[55px] lg:h-[50px] xs:h-[50px]">
           Подбор туров
         </button>
-        <button className="text-white text-xs xs:text-sm xs3:text-lg border border-white rounded-[60px] w-[260px] h-[45px] xs:w-[300px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-[350px] xs3:h-[55px] lg:h-[50px] xs:h-[50px]">
+        <button className="text-white text-xs lg:text-base xs:text-sm xs3:text-lg border border-white rounded-[60px] w-[260px] h-[45px] xs:w-[300px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-[350px] xs3:h-[55px] lg:h-[50px] xs:h-[50px]">
           Подбор достопримечательностей
         </button>
       </div>
       <div className="flex flex-col lg:flex-row lg:justify-between lg:w-[95%] items-center gap-2 lg:mt-[30px]">
-        <div className="flex flex-col lg:flex-row gap-2 items-center lg:justify-between lg:w-[80%]">
+        <div className="flex flex-col lg:flex-row gap-2 items-center lg:justify-between xl:gap-[40px]">
           <div className="flex items-center gap-[80px]">
             <div className="flex flex-col items-start gap-2 lg:gap-3">
-              <span className="text-white text-sm xs:text-base xs3:text-lg lg:text-xl">Город</span>
-              <button className="w-[260px] h-[50px] xs:w-[300px] xs:h-[55px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-auto lg:h-auto xs3:h-[60px] text-dark lg:text-white lg:gap-4 text-sm xs:text-base xs3:text-lg lg:text-xl bg-white lg:bg-transparent rounded-[40px] flex items-center justify-between px-6 lg:px-0">
+              <span className="text-white text-sm xs:text-base xs3:text-lg lg:text-lg xl:text-xl">
+                Город
+              </span>
+              <button className="w-[260px] h-[50px] xs:w-[300px] xs:h-[55px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-auto lg:h-auto xs3:h-[60px] text-dark lg:text-white lg:gap-4 text-sm xs:text-base xs3:text-lg lg:text-xl bg-white lg:bg-transparent rounded-[40px] flex items-center justify-between px-6 lg:px-0 xl:text-[22px]">
                 Алматы
                 <ArrowDownDark className="w-[14px] h-auto block lg:hidden" />
                 <ArrowDownLight className="w-[14px] h-auto hidden lg:block" />
               </button>
             </div>
-            <div className="hidden lg:block border border-white h-[90px] w-[1px]"></div>
+            <div className="hidden lg:block border border-white h-[90px] w-[1px] mr-[30px] xl:mr-0 xl:ml-[40px] lx:ml-[70px] lx2:ml-[90px] 2xl:ml-[110px] lx3:ml-[140px] lx4:ml-[190px]"></div>
           </div>
 
           <div className="flex items-center gap-[80px]">
             <div className="flex flex-col items-start gap-2 lg:gap-3">
-              <span className="text-white text-sm xs:text-base xs3:text-lg lg:text-xl">
+              <span className="text-white text-sm xs:text-base xs3:text-lg lg:text-lg xl:text-xl">
                 Тип тура
               </span>
-              <button className="w-[260px] h-[50px] xs:w-[300px] xs:h-[55px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-auto lg:h-auto xs3:h-[60px] text-dark lg:text-white lg:gap-4 text-sm xs:text-base xs3:text-lg lg:text-xl bg-white lg:bg-transparent rounded-[40px] flex items-center justify-between px-6 lg:px-0">
+              <button className="w-[260px] h-[50px] xs:w-[300px] xs:h-[55px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-auto lg:h-auto xs3:h-[60px] text-dark lg:text-white lg:gap-4 text-sm xs:text-base xs3:text-lg lg:text-xl bg-white lg:bg-transparent rounded-[40px] flex items-center justify-between px-6 lg:px-0 xl:text-[22px]">
                 Водный
                 <ArrowDownDark className="w-[14px] h-auto block lg:hidden" />
                 <ArrowDownLight className="w-[14px] h-auto hidden lg:block" />
               </button>
             </div>
-            <div className="hidden lg:block border border-white h-[90px] w-[1px]"></div>
+            <div className="hidden lg:block border border-white h-[90px] w-[1px] mr-[30px] xl:mr-0 xl:ml-[40px] lx:ml-[70px] lx2:ml-[90px] 2xl:ml-[110px] lx3:ml-[140px] lx4:ml-[190px]"></div>
           </div>
 
           <div className="flex items-center gap-[80px]">
             <div className="flex flex-col items-start gap-2 lg:gap-3">
-              <span className="text-white text-sm xs:text-base xs3:text-lg lg:text-xl">Дата</span>
-              <button className="w-[260px] h-[50px] xs:w-[300px] xs:h-[55px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-auto lg:h-auto xs3:h-[60px] text-dark lg:text-white lg:gap-4 text-sm xs:text-base xs3:text-lg lg:text-xl bg-white lg:bg-transparent rounded-[40px] flex items-center justify-between px-6 lg:px-0">
+              <span className="text-white text-sm xs:text-base xs3:text-lg lg:text-lg xl:text-xl">
+                Дата
+              </span>
+              <button className="w-[260px] h-[50px] xs:w-[300px] xs:h-[55px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-auto lg:h-auto xs3:h-[60px] text-dark lg:text-white lg:gap-4 text-sm xs:text-base xs3:text-lg lg:text-xl bg-white lg:bg-transparent rounded-[40px] flex items-center justify-between px-6 lg:px-0 xl:text-[22px]">
                 Любое
                 <ArrowDownDark className="w-[14px] h-auto block lg:hidden" />
                 <ArrowDownLight className="w-[14px] h-auto hidden lg:block" />
               </button>
             </div>
-            <div className="hidden lg:block border border-white h-[90px] w-[1px]"></div>
+            <div className="hidden lg:block border border-white h-[90px] w-[1px] mr-[30px] xl:mr-0 xl:ml-[40px] lx:ml-[70px] lx2:ml-[90px] 2xl:ml-[110px] lx3:ml-[140px] lx4:ml-[190px]"></div>
           </div>
 
           <div className="flex flex-col items-start gap-2 lg:gap-3">
-            <span className="text-white text-sm xs:text-base xs3:text-lg lg:text-xl">
+            <span className="text-white text-sm xs:text-base xs3:text-lg lg:text-lg xl:text-xl">
               Кол-во людей
             </span>
-            <button className="w-[260px] h-[50px] xs:w-[300px] xs:h-[55px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-auto lg:h-auto xs3:h-[60px] text-dark lg:text-white lg:gap-4 text-sm xs:text-base xs3:text-lg lg:text-xl bg-white lg:bg-transparent rounded-[40px] flex items-center justify-between px-6 lg:px-0">
+            <button className="w-[260px] h-[50px] xs:w-[300px] xs:h-[55px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-auto lg:h-auto xs3:h-[60px] text-dark lg:text-white lg:gap-4 text-sm xs:text-base xs3:text-lg lg:text-xl bg-white lg:bg-transparent rounded-[40px] flex items-center justify-between px-6 lg:px-0 xl:text-[22px]">
               Взрослые
               <ArrowDownDark className="w-[14px] h-auto block lg:hidden" />
               <ArrowDownLight className="w-[14px] h-auto hidden lg:block" />
@@ -74,7 +78,7 @@ export default function ChooseTours() {
           <SearchMobile className="block lg:hidden" />
         </button>
         <button>
-          <SearchIcon className="hidden lg:block w-[80px] h-[80px]" />
+          <SearchIcon className="hidden lg:block w-[70px] h-[70px] xl:w-[80px] xl:h-[80px]" />
         </button>
       </div>
     </div>
