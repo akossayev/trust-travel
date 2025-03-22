@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
 import './globals.css';
-import Footer from '@/app/(landing)/_components/Footer';
-import Header from '@/app/(landing)/_components/Header';
 import Providers from '@/app/providers';
-import SelectTour from './(landing)/_components/SelectTour';
-import ChooseTours from './(landing)/_components/ChooseTours';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import SelectTour from '../components/SelectTour';
+import ChooseTours from '../components/ChooseTours';
 
 export const metadata: Metadata = {
   title: 'Create Next App',

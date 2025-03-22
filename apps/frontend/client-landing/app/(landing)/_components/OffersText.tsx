@@ -1,5 +1,5 @@
 import React from 'react';
-import ArrowButtonText from '../svg-icons/ArrowButtonText';
+import ArrowButtonText from '../../../public/svg/ArrowButtonText';
 
 export default function OffersText() {
   return (

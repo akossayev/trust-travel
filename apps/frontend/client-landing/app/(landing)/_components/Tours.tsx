@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import { useState } from 'react';
-import ClassicTours from './ClassicTours';
-import CustomTours from './CustomTours';
+import ClassicTours from '../../tours/_components/ClassicTours';
+import CustomTours from '../../tours/_components/CustomTours';
 import { useRouter } from 'next/navigation';
 
 export default function Tours() {

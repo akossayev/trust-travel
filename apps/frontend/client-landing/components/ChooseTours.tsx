@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 import { useState } from 'react';
-import ArrowDownDark from '../svg-icons/ArrowDownDark';
-import ArrowDownLight from '../svg-icons/ArrowDownLight';
-import SearchMobile from '../svg-icons/SearchMobile';
-import SearchIcon from '../svg-icons/SearchIcon';
+import ArrowDownDark from '../public/svg/ArrowDownDark';
+import ArrowDownLight from '../public/svg/ArrowDownLight';
+import SearchMobile from '../public/svg/SearchMobile';
+import SearchIcon from '../public/svg/SearchIcon';
 
 export default function ChooseTours() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import ArrowButtonBlue from '../svg-icons/ArrowButtonBlue';
+import ArrowButtonBlue from '../../../public/svg/ArrowButtonBlue';
 
 // http://localhost:9000/bucketName/object_key
 

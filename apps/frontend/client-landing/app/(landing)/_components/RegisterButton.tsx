@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import ArrowButtonBlue from '../svg-icons/ArrowButtonBlue';
-import PlaneIcon from '../svg-icons/PlaneIcon';
+import ArrowButtonBlue from '../../../public/svg/ArrowButtonBlue';
+import PlaneIcon from '../../../public/svg/PlaneIcon';
 
 export default function RegisterButton() {
   return (

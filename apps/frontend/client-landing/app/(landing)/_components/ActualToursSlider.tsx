@@ -2,11 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import slideTour from '../../../public/slide-tour.png';
 
-import ArrowSliderLeftDark from '../svg-icons/ArrowSliderLeftDark';
-import ArrowSliderRightDark from '../svg-icons/ArrowSliderRightDark';
+import ArrowSliderLeftDark from '../../../public/svg/ArrowSliderLeftDark';
+import ArrowSliderRightDark from '../../../public/svg/ArrowSliderRightDark';
 
-import ArrowSliderLeftLight from '../svg-icons/ArrowSliderLeftLight';
-import ArrowSliderRightLight from '../svg-icons/ArrowSliderRightLight';
+import ArrowSliderLeftLight from '../../../public/svg/ArrowSliderLeftLight';
+import ArrowSliderRightLight from '../../../public/svg/ArrowSliderRightLight';
 
 export default function ActualToursSlider() {
   return (

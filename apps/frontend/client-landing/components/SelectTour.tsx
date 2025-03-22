@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
-import ArrowButtonBlue from '../svg-icons/ArrowButtonBlue';
-import ArrowButtonSilver from '../svg-icons/ArrowButtonSilver';
+import ArrowButtonBlue from '../public/svg/ArrowButtonBlue';
+import ArrowButtonSilver from '../public/svg/ArrowButtonSilver';
 
 export default function SelectTour() {
   return (

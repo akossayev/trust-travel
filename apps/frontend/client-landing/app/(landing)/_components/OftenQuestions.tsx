@@ -1,5 +1,5 @@
 import React from 'react';
-import QuestionIcon from '../svg-icons/QuestionIcon';
+import QuestionIcon from '../../../public/svg/QuestionIcon';
 
 export default function OftenQuestions() {
   return (
