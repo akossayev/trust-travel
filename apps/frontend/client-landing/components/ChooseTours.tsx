@@ -9,7 +9,6 @@ import { useRouter } from 'next/navigation';
 
 export default function ChooseTours() {
   const [activeButton, setActiveButton] = useState(0);
-
   const router = useRouter();
 
   return (
@@ -17,7 +16,9 @@ export default function ChooseTours() {
       <div className="flex flex-col lg:flex-row items-center gap-2">
         <button
           className={`lg:text-base text-xs xs:text-sm xs3:text-lg rounded-[60px] w-[260px] h-[45px] xs:w-[300px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-[250px] xs3:h-[55px] lg:h-[50px] xs:h-[50px] ${activeButton === 0 ? 'text-[#747474] bg-white' : 'border border-white text-white'}`}
-          onClick={() => setActiveButton(0)}>
+          onClick={() => {
+            setActiveButton(0), router.push('/');
+          }}>
           Подбор туров
         </button>
         <button
