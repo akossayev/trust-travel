@@ -8,14 +8,14 @@ import OftenQuestions from '@/app/(landing)/_components/OftenQuestions';
 
 const LandingRoot = () => {
   return (
-    <div>
+    <>
       <ActualToursSlider />
       <RegisterButton />
       <Tours />
       <OffersText />
       <Partness />
       <OftenQuestions />
-    </div>
+    </>
   );
 };
 

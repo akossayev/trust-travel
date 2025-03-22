@@ -5,15 +5,26 @@ import ArrowDownDark from '../public/svg/ArrowDownDark';
 import ArrowDownLight from '../public/svg/ArrowDownLight';
 import SearchMobile from '../public/svg/SearchMobile';
 import SearchIcon from '../public/svg/SearchIcon';
+import { useRouter } from 'next/navigation';
 
 export default function ChooseTours() {
+  const [activeButton, setActiveButton] = useState(0);
+
+  const router = useRouter();
+
   return (
     <div className="flex flex-col items-center gap-5 w-[95%] mx-auto mt-[30px] xs:mt-[20px] rounded-[40px] bg-lightblue h-auto py-8 xs2:py-9 xs3:py-10 bg-gradient-to-r from-[#489FC4] via-[#6FABC5] to-[#489FC4]">
       <div className="flex flex-col lg:flex-row items-center gap-2">
-        <button className="text-[#747474] lg:text-base text-xs xs:text-sm xs3:text-lg bg-white rounded-[60px] w-[260px] h-[45px] xs:w-[300px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-[250px] xs3:h-[55px] lg:h-[50px] xs:h-[50px]">
+        <button
+          className={`lg:text-base text-xs xs:text-sm xs3:text-lg rounded-[60px] w-[260px] h-[45px] xs:w-[300px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-[250px] xs3:h-[55px] lg:h-[50px] xs:h-[50px] ${activeButton === 0 ? 'text-[#747474] bg-white' : 'border border-white text-white'}`}
+          onClick={() => setActiveButton(0)}>
           Подбор туров
         </button>
-        <button className="text-white text-xs lg:text-base xs:text-sm xs3:text-lg border border-white rounded-[60px] w-[260px] h-[45px] xs:w-[300px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-[350px] xs3:h-[55px] lg:h-[50px] xs:h-[50px]">
+        <button
+          className={`text-xs lg:text-base xs:text-sm xs3:text-lg rounded-[60px] w-[260px] h-[45px] xs:w-[300px] xs1:w-[310px] xs2:w-[340px] xs3:w-[390px] lg:w-[350px] xs3:h-[55px] lg:h-[50px] xs:h-[50px] ${activeButton === 1 ? 'text-[#747474] bg-white' : 'border border-white text-white'}`}
+          onClick={() => {
+            setActiveButton(1), router.push('/attractionsPage');
+          }}>
           Подбор достопримечательностей
         </button>
       </div>

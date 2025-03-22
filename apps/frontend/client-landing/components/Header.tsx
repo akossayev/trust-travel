@@ -47,7 +47,7 @@ export default function Header() {
         <li className="cursor-pointer relative" onClick={() => setIsOpenOffice(!isOpenOffice)}>
           Мой кабинет
           {isOpenOffice && (
-            <ul className="text-xs lg:text-sm w-[140px] lg:w-[205px] py-2 px-2 absolute left-1/3 top-full transform -translate-x-1/2 mt-2 rounded-[15px] bg-white/50 backdrop-blur-[30px] shadow-sm border-[1px] border-[#CACACA] text-[#747474]">
+            <ul className="text-xs lg:text-sm w-[140px] lg:w-[205px] py-2 px-2 absolute left-1/2 top-full transform -translate-x-1/2 mt-2 rounded-[15px] bg-white/50 backdrop-blur-[30px] shadow-sm border-[1px] border-[#CACACA] text-[#747474]">
               <li className="py-2 rounded-[20px] text-center cursor-pointer mt-2 bg-[#FFFFFF]">
                 Войти
               </li>

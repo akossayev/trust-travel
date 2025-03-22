@@ -12,8 +12,8 @@ export default function RegisterButton() {
         <span>кэшбэк на первый тур!🌍</span>
       </p>
 
-      <button className="w-[250px] h-[50px] flex items-center bg-white gap-4 xl:gap-7 border border-[#D7D7D7] p-1 rounded-[30px] pr-7 text-[#489FC4] xl:pr-[50px] xl:text-xl z-10 lg:mt-[-50px] lg:h-[50px] xl:h-[60px] xl:w-[320px]">
-        <ArrowButtonBlue className="w-[50px] h-[50px] lx:w-[60px] lx:h-[60px]" />
+      <button className="w-[250px] h-[50px] flex items-center bg-white gap-4 xl:gap-4 border border-[#D7D7D7] p-1 rounded-[30px] pr-7 text-[#489FC4] xl:pr-[50px] xl:text-xl z-10 lg:mt-[-50px] lg:h-[50px] xl:h-[60px] xl:w-[320px]">
+        <ArrowButtonBlue className="w-[50px] h-[50px] lx:w-[50px] lx:h-[50px]" />
         Зарегистрироваться
       </button>
 

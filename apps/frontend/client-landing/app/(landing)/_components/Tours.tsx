@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import { useState } from 'react';
-import ClassicTours from '../../tours/_components/ClassicTours';
-import CustomTours from '../../tours/_components/CustomTours';
+import ClassicTours from '../../toursPage/_components/ClassicTours';
+import CustomTours from '../../toursPage/_components/CustomTours';
 import { useRouter } from 'next/navigation';
 
 export default function Tours() {
@@ -45,7 +45,7 @@ export default function Tours() {
 
       <button
         className="px-10 py-3 rounded-[30px] text-lg bg-[#489FC4] text-white"
-        onClick={() => router.push('/tours')}>
+        onClick={() => router.push('/toursPage')}>
         Подробнее о всех турах
       </button>
     </div>

@@ -1,12 +1,13 @@
 import React from 'react';
 
-interface Props {
+interface Props extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-export default function ArrowSliderLeftLight({ className }: Props) {
+export default function ArrowSliderLeftLight({ className, ...restProps }: Props) {
   return (
     <svg
+      {...restProps}
       width="93"
       height="93"
       viewBox="0 0 93 93"
