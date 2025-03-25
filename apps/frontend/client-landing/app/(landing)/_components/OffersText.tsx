@@ -1,6 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
-import arrowButtonText from '@/public/arrow-button-text.svg';
+import ArrowButtonText from '../../../public/svg/ArrowButtonText';
 
 export default function OffersText() {
   return (
@@ -16,65 +15,35 @@ export default function OffersText() {
               авторизируйтесь и начните копить
             </p>
           </div>
-          <button className="w-[330px] xl:w-[200px] h-[55px] text-foreground text-xl rounded-[30px] xl:rounded-[35px] border border-[#C8C8C8] bg-gradient-to-r from-[#489FC4] to-[#3771C8]">
+          <button className="w-[300px] xl:w-[200px] h-[55px] text-white text-xl rounded-[30px] xl:rounded-[35px] border border-[#C8C8C8] bg-gradient-to-r from-[#489FC4] to-[#3771C8]">
             Хочу!
           </button>
         </div>
 
-        <div className="flex flex-col gap-1 items-center xl:gap-3">
+        <div className="flex flex-col gap-1 items-center xl:gap-3 mt-[10px]">
           <div className="flex gap-1 xl:gap-3">
             <button className="flex items-center gap-[10px] w-[120px] xl:w-[180px] xl:text-xl xl:gap-[20px] h-[50px] xl:h-[70px] xl:rounded-[35px] text-[#489FC4] text-lg border border-[#489FC4] rounded-[30px] py-2 pl-[5px] sm2:w-[130px]">
-              <Image
-                src={arrowButtonText}
-                alt="button-icon"
-                width={40}
-                height={40}
-                className="xl:w-[60px]"
-              />
+              <ArrowButtonText className="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]" />
               Текст
             </button>
             <button className="flex items-center gap-[10px] w-[120px] xl:w-[180px] xl:text-xl  xl:gap-[20px] h-[50px] xl:h-[70px] xl:rounded-[35px] text-[#489FC4] text-lg border border-[#489FC4] rounded-[30px] py-2 pl-[5px] sm2:w-[130px]">
-              <Image
-                src={arrowButtonText}
-                alt="button-icon"
-                width={40}
-                height={40}
-                className="xl:w-[60px]"
-              />
+              <ArrowButtonText className="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]" />
               Текст
             </button>
           </div>
           <div className="flex gap-1 xl:gap-3">
             <button className="flex items-center gap-[10px] w-[120px] xl:w-[180px] xl:text-xl  xl:gap-[20px] h-[50px] xl:h-[70px] xl:rounded-[35px] text-[#489FC4] text-lg border border-[#489FC4] rounded-[30px] py-2 pl-[5px] sm2:w-[130px]">
-              <Image
-                src={arrowButtonText}
-                alt="button-icon"
-                width={40}
-                height={40}
-                className="xl:w-[60px]"
-              />
+              <ArrowButtonText className="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]" />
               Текст
             </button>
             <button className="flex items-center gap-[35px] w-[180px] xl:w-[300px] xl:gap-[20px] xl:text-xl  h-[50px] xl:h-[70px] xl:rounded-[35px] text-[#489FC4] text-lg border border-[#489FC4] rounded-[30px] py-2 pl-[5px] sm2:w-[200px]">
-              <Image
-                src={arrowButtonText}
-                alt="button-icon"
-                width={40}
-                height={40}
-                className="xl:w-[60px]"
-              />
+              <ArrowButtonText className="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]" />
               Текст
             </button>
           </div>
           <div>
             <button className="flex items-center gap-[10px] w-[130px] xl:w-[300px] xl:gap-[20px] xl:text-xl  h-[50px] xl:h-[70px] xl:rounded-[35px] text-[#489FC4] text-lg border border-[#489FC4] rounded-[30px] py-2 pl-[5px] sm2:w-[140px]">
-              <Image
-                src={arrowButtonText}
-                alt="button-icon"
-                width={40}
-                height={40}
-                className="xl:w-[60px]"
-              />
+              <ArrowButtonText className="w-[40px] h-[40px] xl:w-[60px] xl:h-[60px]" />
               Текст
             </button>
           </div>

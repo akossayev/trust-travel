@@ -9,15 +9,23 @@ export default {
   theme: {
     extend: {
       screens: {
-        xs: '375px', // iPhone X, 12 mini
-        sm1: '390px', // iPhone 12, 13, 14
-        sm2: '430px', // iPhone 14 Pro Max
-        sm3: '480px', // Galaxy S20, старые телефоны Android
-        sm4: '1920px',
+        xs: '375px',
+        xs1: '390px',
+        xs2: '430px',
+        xs3: '480px',
+        lx: '1366px',
+        lx2: '1440px',
+        lx3: '1680px',
+        lx4: '1920px',
+        lx5: '2560px',
+        lx6: '3440px',
+        lx7: '3840px',
       },
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        white: 'var(--light)',
+        dark: 'var(--dark)',
+        lightblue: 'var(--lightblue)',
+        darklight: 'var(--darklight)',
       },
     },
   },

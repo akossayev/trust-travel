@@ -1,37 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
-import arrowButtonBlue from '@/public/arrow-button-blue.svg';
-import planeIcon from '@/public/plane.svg';
+import ArrowButtonBlue from '../../../public/svg/ArrowButtonBlue';
+import PlaneIcon from '../../../public/svg/PlaneIcon';
 
 export default function RegisterButton() {
   return (
-    <div className="flex flex-col items-center mt-[50px] relative">
+    <div className="flex flex-col items-center mt-[0px] relative">
       <p className="flex flex-col items-center mt-[80px] mb-[80px] text-lg xl:text-3xl z-10 font-medium lg:text-2xl">
         <span>Путешествуйте выгодно!</span>
         <span>Регистрируйтесь сейчас и получите</span>
         <span>кэшбэк на первый тур!🌍</span>
       </p>
 
-      <button className="w-[250px] h-[60px] flex items-center bg-white gap-4 xl:gap-7 border border-[#D7D7D7] p-1 rounded-[30px] pr-7 text-[#489FC4] xl:pr-[50px] xl:text-xl z-10 lg:mt-[-50px] lg:h-[50px] xl:h-[60px] xl:w-[320px]">
-        <Image
-          src={arrowButtonBlue}
-          alt="arrow-button-blue"
-          width={50}
-          height={50}
-          className="lg:w-[40px] xl:w-[50px]"
-          loading="lazy"
-        />
+      <button className="w-[250px] h-[50px] flex items-center bg-white gap-4 xl:gap-4 border border-[#D7D7D7] p-1 rounded-[30px] pr-7 text-[#489FC4] xl:pr-[50px] xl:text-xl z-10 lg:mt-[-50px] lg:h-[50px] xl:h-[60px] xl:w-[320px]">
+        <ArrowButtonBlue className="w-[50px] h-[50px] lx:w-[50px] lx:h-[50px]" />
         Зарегистрироваться
       </button>
 
-      <Image
-        src={planeIcon}
-        alt="plane"
-        width={80}
-        height={80}
-        className="absolute top-[150px] right-[20px] z-10 sm2:right-[40px] lg:w-[100px] lg:top-[40] lg:left-[830] xl:w-[140px] xl:top-[0] xl:left-[84%]"
-        loading="lazy"
-      />
+      <PlaneIcon className=" w-[100px] h-[60px] absolute top-[160px] right-[0px] z-10 sm2:right-[40px] lg:w-[100px] lg:top-[40] lg:left-[830] xl:w-[140px] xl:top-[0] xl:left-[84%]" />
 
       <Image
         src="/bg-plane-line.png"
