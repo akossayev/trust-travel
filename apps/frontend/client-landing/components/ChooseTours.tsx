@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation';
 export default function ChooseTours() {
   const [activeButton, setActiveButton] = useState(0);
   const router = useRouter();
-
+  
   return (
     <div className="flex flex-col items-center gap-5 w-[95%] mx-auto mt-[30px] xs:mt-[20px] rounded-[40px] bg-lightblue h-auto py-8 xs2:py-9 xs3:py-10 bg-gradient-to-r from-[#489FC4] via-[#6FABC5] to-[#489FC4]">
       <div className="flex flex-col lg:flex-row items-center gap-2">
