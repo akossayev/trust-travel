@@ -33,7 +33,7 @@ export default function RegisterButton() {
         alt="line"
         width={280}
         height={100}
-        className="w-[300px] h-[130px] absolute top-[160px] right-[80px] sm1:w-[320px] sm2:w-[360px] sm2:h-[150px] sm2:top-[140px] sm2:right-[70px] sm3:w-[410px] sm:w-[580px] md:w-[700px] lg:hidden"
+        className="w-[300px] h-[130px] absolute left-0 top-[160px] right-[80px] sm1:w-[320px] sm2:w-[360px] sm2:h-[150px] sm2:top-[140px] sm2:right-[70px] sm3:w-[410px] sm:w-[580px] md:w-[700px] lg:hidden"
         loading="lazy"
       />
     </div>
