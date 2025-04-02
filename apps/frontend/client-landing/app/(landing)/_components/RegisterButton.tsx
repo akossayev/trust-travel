@@ -17,7 +17,7 @@ export default function RegisterButton() {
         Зарегистрироваться
       </button>
 
-      <PlaneIcon className=" w-[100px] h-[60px] absolute top-[160px] right-[0px] z-10 sm2:right-[40px] lg:w-[100px] lg:top-[40] lg:left-[830] xl:w-[140px] xl:top-[0] xl:left-[84%]" />
+      <PlaneIcon className=" w-[100px] h-[60px] absolute top-[160px] right-[50px] z-10 sm2:right-[40px] lg:w-[100px] lg:top-[40] lg:left-[830] xl:w-[140px] xl:top-[0] xl:left-[84%]" />
 
       <Image
         src="/bg-plane-line.png"

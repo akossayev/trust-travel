@@ -15,6 +15,7 @@ export default {
         xs3: '480px',
         lx: '1366px',
         lx2: '1440px',
+        lx3: '1920px',
       },
       colors: {
         light: 'var(--light)',
