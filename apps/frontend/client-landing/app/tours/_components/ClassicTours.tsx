@@ -1,5 +1,5 @@
 import React from 'react';
-import SoloAttraction from '@/app/attractionsPage/_components/ui/SoloAttraction';
+import SoloAttraction from '@/app/attractions/_components/ui/SoloAttraction';
 // http://localhost:9000/bucketName/object_key
 
 export default function ClassicTours() {

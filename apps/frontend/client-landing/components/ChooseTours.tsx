@@ -12,7 +12,7 @@ export default function ChooseTours() {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col items-center gap-5 w-[95%] mx-auto mt-[30px] xs:mt-[20px] rounded-[40px] bg-lightblue h-auto py-8 xs2:py-9 xs3:py-10 bg-gradient-to-r from-[#489FC4] via-[#6FABC5] to-[#489FC4]">
+    <div className="flex flex-col items-center gap-5 w-[95%] mx-auto mt-[30px] xs:mt-[20px] rounded-[40px] bg-lightblue h-auto py-5 xs2:py-9 xs3:py-10 lg:py-7 bg-gradient-to-r from-[#489FC4] via-[#6FABC5] to-[#489FC4]">
       <div className="flex flex-col lg:flex-row items-center gap-2 w-full justify-center">
         <button
           className={`lg:text-base text-xs xs:text-sm xs3:text-lg rounded-[60px] w-[85%] lg:w-[20%] h-[45px] xs3:h-[55px] lg:h-[50px] xs:h-[50px] ${activeButton === 0 ? 'text-[#747474] bg-white' : 'border border-white text-white'}`}
@@ -29,7 +29,7 @@ export default function ChooseTours() {
           Подбор достопримечательностей
         </button>
       </div>
-      <div className="flex flex-col lg:flex-row lg:justify-between w-[85%] items-center gap-2 lg:mt-[30px]">
+      <div className="flex flex-col lg:flex-row lg:justify-between w-[85%] lg:w-full lg:px-[30px] items-center gap-2 lg:mt-[30px]">
         <div className="flex flex-col lg:flex-row gap-2 items-center lg:justify-between xl:gap-[40px] w-full">
           <div className="flex items-center gap-[80px] w-full">
             <div className="flex flex-col items-start gap-2 lg:gap-3 w-full">
@@ -85,7 +85,7 @@ export default function ChooseTours() {
           </div>
         </div>
 
-        <button className="bg-[#fff]/50 flex items-center justify-center rounded-[60px] gap-3 text-sm text-white mt-[20px] w-[85%] h-[40px] xs:text-base xs:h-[45px] xs3:h-[50px] xs3:text-lg lg:hidden">
+        <button className="bg-[#fff]/50 flex items-center justify-center rounded-[60px] gap-3 text-sm text-white mt-[30px] w-[85%] h-[40px] xs:text-base xs:h-[45px] xs3:h-[50px] xs3:text-lg lg:hidden">
           Найти
           <SearchMobile className="block lg:hidden" />
         </button>

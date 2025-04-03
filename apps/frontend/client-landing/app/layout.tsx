@@ -27,8 +27,8 @@ export default function RootLayout({
       <body className={manrope.className}>
         <Providers>
           <Header />
-          <SelectTour />
-          <ChooseTours />
+          {/* <SelectTour /> */}
+          {/* <ChooseTours /> */}
           <main>{children}</main>
           <Footer />
         </Providers>

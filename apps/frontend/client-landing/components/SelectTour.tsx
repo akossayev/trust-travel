@@ -8,7 +8,7 @@ export default function SelectTour() {
   const router = useRouter();
 
   return (
-    <div className="h-[460px] xs:h-[590px] xs2:h-[630px] xs3:h-[670px] lg:h-[613px] overflow-x-hidden mt-[10px]">
+    <div className="h-[460px] xs:h-[590px] xs2:h-[630px] xs3:h-[670px] sm:h-[590px] lg:h-[613px] overflow-x-hidden mt-[10px]">
       <div
         className="flex flex-col justify-between w-[95%] h-[380px] xs:h-[510px] xs2:h-[550px] xs3:h-[590px] lg:h-[613px] mx-auto py-[20px] lg:py-[30px] lg:pl-[30px] pl-[20px] rounded-[30px] bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: 'url(/bg-Mountain.png)' }}>
