@@ -2,8 +2,8 @@
 import React from 'react';
 import { useState } from 'react';
 import ToursClassicCards from './ToursClassicCards';
-import CustomTours from '../../tours/_components/CustomTours';
-import TourProgramm from '@/app/tours/_components/TourProgramm';
+import CustomTours from '../tours/_components/CustomTours';
+import TourProgramm from '@/app/(landing)/tours/_components/TourProgramm';
 import { useRouter } from 'next/navigation';
 
 export default function Tours() {
