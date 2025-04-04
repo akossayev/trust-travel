@@ -1,7 +1,7 @@
 import React from 'react';
 import ArrowButtonBlue from '@/public/svg/ArrowButtonBlue';
 
-export default function TourClassicCards() {
+export default function TourClassicLanding() {
   return (
     <div className="flex gap-[10px] lg:gap-[40px] xl:gap-[60px] sm:w-full sm:justify-center ">
       <div

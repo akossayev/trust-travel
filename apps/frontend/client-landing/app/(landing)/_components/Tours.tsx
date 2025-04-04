@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
 import { useState } from 'react';
-import ToursClassicCards from './ToursClassicCards';
-import CustomTours from '../tours/_components/CustomTours';
-import TourProgramm from '@/app/(landing)/tours/_components/TourProgramm';
+import ToursClassicLanding from './ToursClassicLanding';
+import CustomTours from '../../(pages)/tours/_components/CustomTours';
+import TourProgramm from '../../(pages)/tours/_components/TourProgramm';
 import { useRouter } from 'next/navigation';
 
 export default function Tours() {
@@ -43,7 +43,7 @@ export default function Tours() {
 
       {example === 0 && (
         <>
-          <ToursClassicCards />
+          <ToursClassicLanding />
           <button
             className="px-10 py-3 rounded-[30px] text-lg bg-[#489FC4] text-white hidden lg:block"
             onClick={() => router.push('/toursPage')}>
