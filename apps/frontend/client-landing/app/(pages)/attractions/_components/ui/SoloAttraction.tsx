@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import CardTour from '../../../../public/card-tour.png';
+import CardTour from '../../../../../public/card-tour.png';
 import Heart from '@/public/svg/Heart';
 import ArrowButtonBlue from '@/public/svg/ArrowButtonBlue';
 

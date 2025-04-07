@@ -24,7 +24,7 @@ export default function ChooseTours() {
         <button
           className={`text-xs lg:text-base xs:text-sm xs3:text-lg rounded-[60px] w-[85%] lg:w-[30%] h-[45px] xs3:h-[55px] lg:h-[50px] xs:h-[50px] ${activeButton === 1 ? 'text-[#747474] bg-white' : 'border border-white text-white'}`}
           onClick={() => {
-            setActiveButton(1), router.push('/attractionsPage');
+            setActiveButton(1), router.push('/attractions');
           }}>
           Подбор достопримечательностей
         </button>

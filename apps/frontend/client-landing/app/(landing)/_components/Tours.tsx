@@ -32,8 +32,8 @@ export default function Tours() {
             key={elem.id}
             className={
               selectTypeTour === elem.id
-                ? 'text-white py-3 px-4 bg-[#489FC4] rounded-full w-[230px] xs2:w-[270px] h-[50px] xs3:w-[300px] xs2:h-[60px] xs3:h-[65px] sm2:w-[260px] sm2:h-[65px] sm2:text-lg sm:w-[150px] sm:h-[40px] sm:text-xs lg:w-[190px] xl:w-[250px] lg:text-base xl:h-[50px] xl:text-xl xs3:text-xl flex items-center justify-center'
-                : 'text-background py-3 px-4 bg-[radial-gradient(#FFFFFF,#E8E8E8)] backdrop-blur-[50px] rounded-full w-[230px] xs2:w-[270px] xs3:w-[300px] h-[50px] xs2:h-[60px] xs3:h-[65px] sm2:w-[260px] sm2:h-[65px] sm2:text-lg lg:text-base sm:w-[150px] sm:h-[40px] sm:text-xs lg:w-[190px] xl:w-[250px] xl:h-[50px] xl:text-xl xs3:text-xl flex items-center justify-center'
+                ? 'text-white py-3 px-4 bg-[#489FC4] rounded-full w-[210px] xs2:w-[270px] h-[50px] xs3:w-[300px] xs2:h-[60px] xs3:h-[65px] sm2:w-[260px] sm2:h-[65px] sm2:text-lg sm:w-[150px] sm:h-[40px] sm:text-xs lg:w-[190px] xl:w-[250px] lg:text-base xl:h-[50px] xl:text-xl xs3:text-xl flex items-center justify-center'
+                : 'text-background py-3 px-4 bg-[radial-gradient(#FFFFFF,#E8E8E8)] backdrop-blur-[50px] rounded-full w-[210px] xs2:w-[270px] xs3:w-[300px] h-[50px] xs2:h-[60px] xs3:h-[65px] sm2:w-[260px] sm2:h-[65px] sm2:text-lg lg:text-base sm:w-[150px] sm:h-[40px] sm:text-xs lg:w-[190px] xl:w-[250px] xl:h-[50px] xl:text-xl xs3:text-xl flex items-center justify-center'
             }
             onClick={() => test(elem.id)}>
             {elem.name}
@@ -46,7 +46,7 @@ export default function Tours() {
           <ToursClassicLanding />
           <button
             className="px-10 py-3 rounded-[30px] text-lg bg-[#489FC4] text-white hidden lg:block"
-            onClick={() => router.push('/toursPage')}>
+            onClick={() => router.push('/tours')}>
             Подробнее о всех турах
           </button>
         </>

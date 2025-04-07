@@ -23,7 +23,7 @@ export default function ActualToursSlider() {
 
   return (
     <div className="flex flex-col items-center overflow-x-hidden relative">
-      <h2 className="my-[50px] text-xl lg:text-2xl">Актуальные туры</h2>
+      <h2 className="my-[50px] text-base lg:text-2xl">Актуальные туры</h2>
 
       <div className="flex items-center gap-5">
         <div className="relative group w-[250px] h-[240px] ml-[270px] sm2:ml-[-110px] sm3:ml-[-90px] md:ml-0 rounded-[40px] lg:ml-0 lg:w-[220px] lg:h-[290px] xl:w-[330px] xl:h-[400px] 2xl:w-[360px] 2xl:h-[430px]">
