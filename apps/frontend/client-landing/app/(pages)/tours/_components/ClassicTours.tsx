@@ -6,7 +6,6 @@ export default function ClassicTours() {
   return (
     <div className="mt-[0px]">
       <div className="flex flex-col items-center">
-        <h2 className="text-center text-lg lg:text-2xl lg:font-medium">Туры</h2>
         <div className="flex flex-col items-center ">
           <SoloAttraction />
           <SoloAttraction />

@@ -6,25 +6,18 @@ import { useRouter } from 'next/navigation';
 
 export default function SelectTour() {
   const router = useRouter();
-  
+
   return (
     <div className="h-[460px] xs:h-[590px] xs2:h-[630px] xs3:h-[670px] sm:h-[590px] lg:h-[613px] overflow-x-hidden mt-[10px]">
       <div
         className="flex flex-col justify-between w-[95%] h-[380px] xs:h-[510px] xs2:h-[550px] xs3:h-[590px] lg:h-[613px] mx-auto py-[20px] lg:py-[30px] lg:pl-[30px] pl-[20px] rounded-[30px] bg-center bg-cover bg-no-repeat"
-        style={{ backgroundImage: 'url(/bg-Mountain.png)' }}>
+        style={{ backgroundImage: 'url(/bg-mountain.png)' }}>
         <h2 className="text-white font-semibold leading-[22px] text-base xs:text-xl xs1:text-[22px] xs2:text-2xl lg:text-4xl xl:text-5xl lx:text-[52px] lx:font-bold xs3:text-[27px] xs3:leading-[33px] lg:leading-[50px] xl:leading-[65px] xs:leading-[28px]">
           Путешествуйте <br /> с удовольствием, выбирайте <br /> TrusTTravel!
         </h2>
         <div className="flex flex-col relative sm:flex-row-reverse sm:justify-between sm:items-end sm:static">
           <div className="flex gap-2 absolute bottom-0 left-[45px] xs1:left-[55px] sm:static sm:mr-[-50px]">
             <div className="w-[100px] xs:w-[125px] xs2:w-[140px] lg:w-[180px] lx:w-[208px] h-[115px] xs:h-[130px] xs2:h-[150px] lg:h-[200px] lx:h-[223px] rounded-[20px] bg-[#fff]/50"></div>
-            {/* <div className="flex flex-col items-center justify-between py-2 w-[100px] xs:w-[125px] xs2:w-[140px] lg:w-[180px] lx:w-[208px] h-[115px] xs:h-[130px] xs2:h-[150px] lg:h-[200px] lx:h-[223px] rounded-[20px] bg-[#fff]/50">
-              <div className="flex items-center justify-between px-5">
-                <span className="text-light text-2xl">Активный отдых</span>
-                <ArrowButtonSilver className="w-[70px] h-[70px]" />
-              </div>
-              <div className="bg-dark w-[190px] h-[110px] rounded-[20px]"></div>
-            </div> */}
             <div className="w-[100px] xs:w-[125px] xs2:w-[140px] lg:w-[180px] lx:w-[208px] h-[115px] xs:h-[130px] xs2:h-[150px] lg:h-[200px] lx:h-[223px] rounded-[20px] bg-[#fff]/50"></div>
             <div className="w-[100px] xs:w-[125px] xs2:w-[140px] lg:w-[180px] lx:w-[208px] h-[115px] xs:h-[130px] xs2:h-[150px] lg:h-[200px] lx:h-[223px] rounded-[20px] bg-[#fff]/50"></div>
           </div>
