@@ -14,9 +14,9 @@ export default function Header() {
   return (
     <header className="py-5 px-[5%] flex items-center justify-between">
       <Link href="/">
-        <Logo className="w-[150px] h-[45px] lg:w-[212px] lg:h-[65px]" />
+        <Logo className="w-[150px] h-[45px] xs1:w-[155px] xs1:h-[50px] xs2:w-[160px] xs2:h-[55px] xs3:w-[190px] xs3:h-[85px] lg:w-[212px] lg:h-[65px]" />
       </Link>
-      <BurgerMenuMobile className="w-[24px] h-[24px] block lg:hidden" />
+      <BurgerMenuMobile className="w-[24px] h-[24px] xs2:w-[30px] xs2:h-[30px] block lg:hidden" />
       <ul className="hidden lg:flex items-center gap-8 leading-[100%] text-darklight text-lg">
         <li className="cursor-pointer">Главная</li>
         <li className="cursor-pointer">Фильтр</li>

@@ -9,11 +9,12 @@ trust-travel/
 ├── apps/
 │   ├── backend/                    # Бэкенд сервисы
 │   │   ├── analytics-service/      # Аналитика (Rust)
-│   │   ├── api-gateway/            # API Gateway (NestJS)
+│   │   ├── api-gateway/            # API Gateway (Go)
 │   │   ├── auth-service/           # Аутентификация (NestJS)
 │   │   ├── booking-service/        # Бронирование (Go)
 │   │   ├── notification-service/   # Уведомления (NestJS)
 │   │   ├── payment-service/        # Платежи (Go)
+│   │   ├── tour-service/           # Сервис туров (Go)
 │   ├── frontend/                   # Фронтенд
 │   │   ├── admin-dashboard/        # Админка (Next.js + NestJS)
 │   │   ├── analytics-dashboard/    # Аналитика (Next.js + Rust)

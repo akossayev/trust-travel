@@ -4,10 +4,10 @@ import ArrowButtonText from '../../../public/svg/ArrowButtonText';
 export default function OffersText() {
   return (
     <div className="flex flex-col items-center xl:px-[150px]">
-      <div className="flex flex-col gap-[40px] items-center xl:flex-row ">
+      <div className="flex flex-col gap-[40px] items-center xl:flex-row">
         <div className="flex flex-col gap-[40px] items-center  xl:items-start">
           <div className="flex flex-col w-full items-center xl:items-start">
-            <h2 className="font-semibold text-[21px] sm1:text-[22px] sm2:text-[24px] sm3:text-[27px] mb-1">
+            <h2 className="font-semibold text-[18px] xs:text-[21px] sm1:text-[22px] sm2:text-[24px] sm3:text-[27px] mb-1">
               Подключите аккаунт TrustTravel <br /> и путешествуйте выгоднее
             </h2>
             <p className="w-[88%] sm2:text-[18px] xl:w-[55%] xl:text-xl">

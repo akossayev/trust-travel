@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package tour;
+
+option go_package = "./tours";
+
+service TourService {
+  rpc GetTours(GetToursRequest) returns (GetToursResponse);
+  rpc CreateTours(CreateToursRequest) returns (CreateToursResponse)
+}
+
+message GetToursRequest {}
+message GetToursResponse {}
+message CreateToursRequest {}
+message CreateToursResponse {}

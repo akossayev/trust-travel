@@ -1,0 +1,15 @@
+{
+  "name": "tour-service",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "rm -rf bin/",
+    "go:build": "go build -o bin/api cmd/main.go",
+    "go:dev": "air -c .air.toml",
+    "build": "npm run go:build",
+    "dev": "npm run go:dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

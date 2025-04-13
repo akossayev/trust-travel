@@ -8,14 +8,14 @@ import OftenQuestions from '@/app/(landing)/_components/OftenQuestions';
 
 const LandingRoot = () => {
   return (
-    <>
+    <React.Fragment>
       <ActualToursSlider />
       <RegisterButton />
       <Tours />
       <OffersText />
       <Partness />
       <OftenQuestions />
-    </>
+    </React.Fragment>
   );
 };
 
