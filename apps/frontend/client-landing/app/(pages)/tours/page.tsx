@@ -10,7 +10,7 @@ export default function Tours() {
   const [selectTypeTour, setSelectTypeTour] = useState<number>(0);
   const [example, setExample] = useState(0);
   const router = useRouter();
-
+  
   const typeTour = [
     { id: 0, name: 'Классические туры' },
     { id: 1, name: 'Кастомные туры' },
