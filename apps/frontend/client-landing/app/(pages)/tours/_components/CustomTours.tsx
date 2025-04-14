@@ -75,6 +75,8 @@ export default function CustomTour() {
       <button className="bg-[#489FC4] text-light py-[10px] rounded-[40px] w-[75%] lg:w-[30%] mt-[30px]">
         Купить
       </button>
+
+      {/* <div className='bg-[#000] h-[800px] w-[75%] absolute top-[-150px]'></div> */}
     </div>
   );
 }
