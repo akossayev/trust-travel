@@ -10,7 +10,7 @@ export default function Tours() {
   const [selectTypeTour, setSelectTypeTour] = useState<number>(0);
   const [example, setExample] = useState(0);
   const router = useRouter();
-
+  
   const typeTour = [
     { id: 0, name: 'Классические туры' },
     { id: 1, name: 'Кастомные туры' },
@@ -23,7 +23,7 @@ export default function Tours() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-10 lg:gap-0 mt-[100px] mb-[100px] overflow-hidden lg:mt-[100px]">
+    <div className="flex flex-col items-center gap-10 lg:gap-0 mt-[100px] mb-[100px] overflow-hidden lg:mt-[100px">
       <h2 className="text-2xl font-medium lg:mb-[50px]">Туры</h2>
 
       <div className="flex flex-col gap-[8px] border border-[to-bottom,#CACACA,#D7D7D7)] p-3 rounded-[30px] sm:flex-row sm:p-1">

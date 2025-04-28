@@ -6,9 +6,12 @@ import ArrowDownLight from '../public/svg/ArrowDownLight';
 import SearchMobile from '../public/svg/SearchMobile';
 import SearchIcon from '../public/svg/SearchIcon';
 import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 export default function ChooseTours() {
-  const [activeButton, setActiveButton] = useState(0);
+  const pathname = usePathname(); // получаем текущий путь
+  const activeButton = pathname === '/attractions' ? 1 : 0;
+
   const router = useRouter();
 
   return (
@@ -17,14 +20,14 @@ export default function ChooseTours() {
         <button
           className={`lg:text-base text-xs xs:text-sm xs3:text-lg rounded-[60px] w-[85%] lg:w-[20%] h-[45px] xs3:h-[55px] lg:h-[50px] xs:h-[50px] ${activeButton === 0 ? 'text-[#747474] bg-white' : 'border border-white text-white'}`}
           onClick={() => {
-            setActiveButton(0), router.push('/');
+            router.push('/');
           }}>
           Подбор туров
         </button>
         <button
           className={`text-xs lg:text-base xs:text-sm xs3:text-lg rounded-[60px] w-[85%] lg:w-[30%] h-[45px] xs3:h-[55px] lg:h-[50px] xs:h-[50px] ${activeButton === 1 ? 'text-[#747474] bg-white' : 'border border-white text-white'}`}
           onClick={() => {
-            setActiveButton(1), router.push('/attractions');
+            router.push('/attractions');
           }}>
           Подбор достопримечательностей
         </button>

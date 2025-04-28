@@ -1,7 +1,5 @@
 import React from 'react';
 
-const SignUp = () => {
+export default function SightPage() {
   return <div></div>;
-};
-
-export default SignUp;
+}
