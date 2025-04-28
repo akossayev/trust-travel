@@ -3,9 +3,9 @@ import ArrowButtonBlue from '@/public/svg/ArrowButtonBlue';
 
 export default function TourClassicLanding() {
   const cards = [
-    { id: 1, title: 'Экспресс тур на Озера Кольсай и Каинды', image: '/card-tour.png' },
-    { id: 2, title: 'Экспресс тур на Озера Кольсай и Каинды', image: '/card-tour.png' },
-    { id: 3, title: 'Экспресс тур на Озера Кольсай и Каинды', image: '/card-tour.png' },
+    { id: 1, title: 'Экспресс тур на Озера Кольсай и Каинды', image: '/card1.png' },
+    { id: 2, title: 'Экспресс тур на Озера Кольсай и Каинды', image: '/card2.png' },
+    { id: 3, title: 'Экспресс тур на Озера Кольсай и Каинды', image: '/card3.png' },
   ];
 
   return (

@@ -2,6 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import CustomTourImage from '../../../../public/custom-tour-culture-card.png';
 
+import Card1 from '../../../../public/card1.png';
+import Card2 from '../../../../public/card2.png';
+import Card3 from '../../../../public/card3.png';
+import Card4 from '../../../../public/card5.png';
+
 export default function CustomTour() {
   const arrayButtons = [
     { id: 1, title: 'Природные достопримечательсности', count: 0 },
@@ -46,9 +51,15 @@ export default function CustomTour() {
           </div>
         </div>
         <div className="grid grid-cols-2 mt-[20px] lg:mt-0 gap-[15px] lg:gap-[20px] lg:grid-cols-3">
-          <div className="bg-[#ccc]/50 w-[130px] h-[130px] lg:w-[180px] lg:h-[180px] rounded-[30px]"></div>
-          <div className="bg-[#ccc]/50 w-[130px] h-[130px] lg:w-[180px] lg:h-[180px] rounded-[30px]"></div>
-          <div className="bg-[#ccc]/50 w-[130px] h-[130px] lg:w-[180px] lg:h-[180px] rounded-[30px]"></div>
+          <div className="bg-[#ccc]/50 w-[130px] h-[130px] lg:w-[180px] lg:h-[180px] rounded-[30px]">
+            <Image src={Card1} alt="" width={180} height={180} className="rounded-[30px] h-full" />
+          </div>
+          <div className="bg-[#ccc]/50 w-[130px] h-[130px] lg:w-[180px] lg:h-[180px] rounded-[30px]">
+            <Image src={Card2} alt="" width={180} height={180} className="rounded-[30px] h-full" />
+          </div>
+          <div className="bg-[#ccc]/50 w-[130px] h-[130px] lg:w-[180px] lg:h-[180px] rounded-[30px]">
+            <Image src={Card3} alt="" width={180} height={180} className="rounded-[30px] h-full" />
+          </div>
         </div>
       </div>
 
@@ -65,10 +76,18 @@ export default function CustomTour() {
           ))}
         </ul>
         <div className="flex items-center w-full gap-[10px] mt-[20px] lg:mt-0">
-          <div className="bg-[#ccc]/50 w-[150px] h-[150px] lg:w-[185px] lg:h-[185px] rounded-[40px]"></div>
-          <div className="bg-[#ccc]/50 w-[150px] h-[150px] lg:w-[185px] lg:h-[185px] rounded-[40px]"></div>
-          <div className="bg-[#ccc]/50 w-[150px] h-[150px] lg:w-[185px] lg:h-[185px] rounded-[40px]"></div>
-          <div className="bg-[#ccc]/50 w-[150px] h-[150px] lg:w-[185px] lg:h-[185px] rounded-[40px]"></div>
+          <div className="bg-[#ccc]/50 w-[150px] h-[150px] lg:w-[185px] lg:h-[185px] rounded-[40px] flex items-center">
+            <Image src={Card1} alt="" width={185} height={185} className="rounded-[40px] h-full" />
+          </div>
+          <div className="bg-[#ccc]/50 w-[150px] h-[150px] lg:w-[185px] lg:h-[185px] rounded-[40px] flex items-center">
+            <Image src={Card2} alt="" width={185} height={185} className="rounded-[40px] h-full" />
+          </div>
+          <div className="bg-[#ccc]/50 w-[150px] h-[150px] lg:w-[185px] lg:h-[185px] rounded-[40px] flex items-center">
+            <Image src={Card3} alt="" width={185} height={185} className="rounded-[40px] h-full" />
+          </div>
+          <div className="bg-[#ccc]/50 w-[150px] h-[150px] lg:w-[185px] lg:h-[185px] rounded-[40px] flex items-center">
+            <Image src={Card4} alt="" width={185} height={185} className="rounded-[40px] h-full" />
+          </div>
         </div>
       </div>
 

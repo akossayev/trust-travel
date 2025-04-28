@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import PlaneIcon from "@/public/svg/PlaneIcon";
+import React from 'react';
+import Image from 'next/image';
+import PlaneIcon from '@/public/svg/PlaneIcon';
 
 export default function PartnershipMain() {
   return (
@@ -37,9 +37,8 @@ export default function PartnershipMain() {
       </button>
 
       <p className="w-[80%] max-w-[650px] text-center font-semibold text-xl">
-        Чтобы стать партнером TrustTravel, необходимо создать бизнес-аккаунт на
-        нашем сайте. Это позволит вам получить доступ к эксклюзивным
-        возможностям и преимуществам нашего партнерства.
+        Чтобы стать партнером TrustTravel, необходимо создать бизнес-аккаунт на нашем сайте. Это
+        позволит вам получить доступ к эксклюзивным возможностям и преимуществам нашего партнерства.
       </p>
 
       <PlaneIcon className="absolute w-[5%] top-[25%] right-[5%] hidden sm:block" />
