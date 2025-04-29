@@ -6,7 +6,7 @@ option go_package = "./tours";
 
 service TourService {
   rpc GetTours(GetToursRequest) returns (GetToursResponse);
-  rpc CreateTours(CreateToursRequest) returns (CreateToursResponse)
+  rpc CreateTours(CreateToursRequest) returns (CreateToursResponse);
 }
 
 message GetToursRequest {}

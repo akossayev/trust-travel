@@ -1,20 +1,22 @@
 package config
 
 import (
-	"github.com/caarlos0/env/v9"
-	_ "github.com/joho/godotenv/autoload"
+	"log"
+	"os"
+
+	"github.com/joho/godotenv"
 )
 
-type Config struct {
-	AppPort string `env:"APP_PORT" envDefault:"8080"`
-	AppEnv  string `env:"APP_ENV" envDefault:"development"`
-	DbDsn   string `env:"DB_DSN"`
+func LoadEnv() {
+	if err := godotenv.Load(); err != nil {
+		log.Fatal("Error loading .env file")
+	}
 }
 
-var Cfg *Config
-
-func init() {
-	if err := env.ParseWithOptions(&Cfg, env.Options{UseFieldNameByDefault: true}); err != nil {
-		panic(err)
+func GetEnv(key, fallback string) string {
+	value := os.Getenv(key)
+	if value == "" {
+		return fallback
 	}
+	return value
 }

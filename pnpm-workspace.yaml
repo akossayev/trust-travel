@@ -7,7 +7,4 @@ packages:
   - "apps/frontend/admin-dashboard"
   - "apps/frontend/analytics-dashboard"
   - "apps/frontend/client-landing"
-  - "packages/eslint-config"
-  - "packages/tailwind-config"
   - "packages/typescript-config"
-  - "packages/ui"

@@ -3,6 +3,7 @@ import React from 'react';
 import ArrowButtonBlue from '../public/svg/ArrowButtonBlue';
 import ArrowButtonSilver from '../public/svg/ArrowButtonSilver';
 import { useRouter } from 'next/navigation';
+import Image from "next/image";
 
 export default function SelectTour() {
   const router = useRouter();
@@ -17,12 +18,10 @@ export default function SelectTour() {
         </h2>
         <div className="flex flex-col relative sm:flex-row-reverse sm:justify-between sm:items-end sm:static">
           <div className="flex gap-2 absolute bottom-0 left-[45px] xs1:left-[55px] sm:static sm:mr-[-50px]">
-            <div className="w-[100px] xs:w-[125px] xs2:w-[140px] lg:w-[180px] lx:w-[208px] h-[115px] xs:h-[130px] xs2:h-[150px] lg:h-[200px] lx:h-[223px] rounded-[20px] bg-[#fff]/50"></div>
-            <div className="w-[100px] xs:w-[125px] xs2:w-[140px] lg:w-[180px] lx:w-[208px] h-[115px] xs:h-[130px] xs2:h-[150px] lg:h-[200px] lx:h-[223px] rounded-[20px] bg-[#fff]/50"></div>
-            <div className="w-[100px] xs:w-[125px] xs2:w-[140px] lg:w-[180px] lx:w-[208px] h-[115px] xs:h-[130px] xs2:h-[150px] lg:h-[200px] lx:h-[223px] rounded-[20px] bg-[#fff]/50"></div>
+
           </div>
           <button
-            className="flex items-center gap-[20px] xs:gap-[20px] pr-[30px] pl-[5px] py-[5px] xs:pl-[4px] xs:py-[4px] rounded-[60px] text-lightblue border border-lightblue absolute bottom-[-100px] ml-[30px] xs:ml-[50px] text-sm xs:text-lg xs1:pr-[35px] xs1:gap-[30px] xs2:pr-[40px] xs2:gap-[35px] xs3:ml-[80px] sm:static sm:py-5 sm:gap-2 sm:ml-0 sm:h-[50px] sm:border-0 sm:bg-[#fff]/90 sm:text-base lg:text-xl lg:pr-[20px] lg:gap-[15px] lx:h-[60px] lx:pl-[6px] lx:text-[22px] lx:pr-[30px]"
+            className="flex items-center gap-[20px] xs:gap-[20px] pr-[30px] pl-[5px] py-[10px] xs:pl-[4px] xs:py-[4px] rounded-[60px] text-lightblue border border-lightblue absolute bottom-[-100px] ml-[30px] xs:ml-[50px] text-sm xs:text-lg xs1:pr-[35px] xs1:gap-[30px] xs2:pr-[40px] xs2:gap-[35px] xs3:ml-[80px] sm:static sm:py-5 sm:gap-2 sm:ml-0 sm:h-[50px] sm:border-0 sm:bg-[#fff]/90 sm:text-base lg:text-xl lg:pr-[20px] lg:gap-[15px] lx:h-[60px] lx:pl-[6px] lx:text-[22px] lx:pr-[30px]"
             onClick={() => router.push('/tours')}>
             <ArrowButtonBlue className="w-[40px] h-[40px] sm:w-[40px] sm:h-[40px] xs:w-[50px] xs:h-[50px] lg:w-[40px] lg:h-[40px] lx:w-[50px] lx:h-[50px]" />
             Выбрать Тур

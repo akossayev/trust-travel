@@ -3,9 +3,9 @@ import ArrowButtonBlue from '@/public/svg/ArrowButtonBlue';
 
 export default function TourClassicLanding() {
   const cards = [
-    { id: 1, title: 'Экспресс тур на Озера Кольсай и Каинды', image: '/card1.png' },
-    { id: 2, title: 'Экспресс тур на Озера Кольсай и Каинды', image: '/card2.png' },
-    { id: 3, title: 'Экспресс тур на Озера Кольсай и Каинды', image: '/card3.png' },
+    { id: 1, title: 'Тур в Боровое: легенды Жумбактаса', image: '/card1.png' },
+    { id: 2, title: 'Экспресс тур на Большое Алматинское озеро', image: '/card2.png' },
+    { id: 3, title: 'Путешествие в Боровое: горы и озёра Казахстана', image: '/card3.png' },
   ];
 
   return (
@@ -15,7 +15,7 @@ export default function TourClassicLanding() {
           key={card.id}
           className="w-[280px] h-[280px] xs:w-[330px] xs2:w-[370px] xs3:w-[410px] xs3:h-[405px] sm:w-[190px] md:w-[200px] sm:h-[205px] lg:w-[245px] lg:h-[250px] xl:w-[320px] xl:h-[325px] lx:w-[350px] lx:h-[355px] 2xl:h-[390px] lx2:h-[365px] xs:h-[325px] xs2:h-[365px] bg-center bg-cover bg-no-repeat rounded-[40px] pl-[30px] pt-[130px] xs:pt-[130px] xs2:pt-[140px] xs3:pt-[160px] sm:pt-[65px] lg:pt-[135px] xl:pt-[120px] lx2:pt-[160px] xl:pl-[40px] sm:pl-[20px] lx:pt-[140px] 2xl:pt-[180px] sm:rounded-[20px]"
           style={{ backgroundImage: `url(${card.image})` }}>
-          <p className="text-white text-lg xs:text-xl xs2:text-2xl sm:text-sm xs3:text-[28px] xs2:font-medium xs2:leading-[35px] lg:text-base lg:mt-[-40px] xl:text-xl lx2:text-[22px] 2xl:text-2xl xl:leading-[30px] xl:mt-[10px] xs:mt-[0] mt-[-30px] font-bold xs:font-semibold">
+          <p className="w-[180px] text-white text-lg xs:text-xl xs2:text-2xl sm:text-sm xs3:text-[28px] xs2:font-medium xs2:leading-[35px] lg:text-base lg:mt-[-40px] xl:text-xl lx2:text-[22px] 2xl:text-2xl xl:leading-[30px] xl:mt-[10px] xs:mt-[0] mt-[-30px] font-bold xs:font-semibold">
             {card.title.split(' ').map((word, index) => (
               <React.Fragment key={index}>
                 {word} {index === 2 || index === 5 ? <br /> : ' '}
