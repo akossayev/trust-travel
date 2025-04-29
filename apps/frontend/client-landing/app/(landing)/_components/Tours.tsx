@@ -14,7 +14,7 @@ export default function Tours() {
   const typeTour = [
     { id: 0, name: 'Классические туры' },
     { id: 1, name: 'Кастомные туры' },
-    { id: 2, name: 'Тур-программа' },
+    // { id: 2, name: 'Тур-программа' },
   ];
 
   const test = (index: number) => {
@@ -52,7 +52,7 @@ export default function Tours() {
         </>
       )}
       {example === 1 && <CustomTours />}
-      {example === 2 && <TourProgramm />}
+      {/*{example === 2 && <TourProgramm />}*/}
     </div>
   );
 }

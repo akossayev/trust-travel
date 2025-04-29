@@ -22,3 +22,13 @@ body {
   color: var(--dark);
   background: var(--light);
 }
+
+/* styles/globals.css or wherever your base CSS is */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
