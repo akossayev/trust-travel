@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={manrope.className}>
         <Providers>
-          <>{children}</>
+          <main>{children}</main>
         </Providers>
       </body>
     </html>
