@@ -1,18 +1,28 @@
+'use client';
 import React from 'react';
 import Logo from '@/icons/Logo';
-import Button from './ui/Button';
-import Search from '@/icons/Search';
+import Menu from '@/icons/mobile/Menu';
+import ArrowDown from '@/icons/ArrowDown';
+import ArrowUp from '@/icons/ArrowUp';
+import { useState } from 'react';
 
 export default function Header() {
+  const [openTours, setOpenTours] = useState<boolean>(false);
   return (
-    <header>
+    <header className="px-3 py-5 flex items-center justify-between">
       <Logo />
-
-      <Button
-        variant="default"
-        hasIcon
-        iconType="search"
-        className="w-[50px] h-[50px] bg-black"></Button>
+      <ul className="hidden sm:flex sm:items-center sm:gap-4">
+        <li>Главная</li>
+        <li>Фильтр</li>
+        <li
+          className="flex items-center gap-1 cursor-pointer"
+          onClick={() => setOpenTours(!openTours)}>
+          Туры {openTours ? <ArrowUp /> : <ArrowDown />}
+        </li>
+        <li>Для компании</li>
+        <li>Для компании</li>
+      </ul>
+      <Menu className="sm:hidden" />
     </header>
   );
 }

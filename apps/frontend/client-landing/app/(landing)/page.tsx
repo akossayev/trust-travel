@@ -1,8 +1,11 @@
-import Button from '@/components/ui/Button';
-import ArrowButton from '@/icons/ArrowButton';
+import BlockFirst from './components/BlockFirst';
 
 const LandingPage = () => {
-  return <div></div>;
+  return (
+    <>
+      <BlockFirst />
+    </>
+  );
 };
 
 export default LandingPage;

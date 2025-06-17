@@ -4,7 +4,7 @@ interface Props extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-export default function ArrowSliderLeft({ className, ...props }: Props) {
+export default function ArrowLeft({ className, ...props }: Props) {
   return (
     <svg
       width="17"

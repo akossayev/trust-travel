@@ -4,11 +4,11 @@ interface Props extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-export default function ArrowButton({ className, ...props }: Props) {
+export default function ArrowSide({ className, ...props }: Props) {
   return (
     <svg
-      width="17"
-      height="19"
+      width="14"
+      height="14"
       viewBox="0 0 17 19"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

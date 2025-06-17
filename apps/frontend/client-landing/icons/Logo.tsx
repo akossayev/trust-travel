@@ -6,5 +6,5 @@ interface Props extends React.SVGProps<SVGSVGElement> {
 }
 
 export default function Logo({ className, ...props }: Props) {
-  return <Image src="/logo.svg" alt="logo" width={200} height={80} className={className} />;
+  return <Image src="/logo.svg" alt="logo" width={150} height={46} className={className} />;
 }

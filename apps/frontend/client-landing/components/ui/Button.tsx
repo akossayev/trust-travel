@@ -1,41 +1,37 @@
 import { cva, VariantProps } from 'class-variance-authority';
 import clsx from 'clsx';
 import React from 'react';
-import ArrowButton from '@/icons/ArrowButton';
-import ArrowSliderLeft from '@/icons/ArrowSliderLeft';
-import ArrowSliderRight from '@/icons/ArrowSliderRight';
+import ArrowSide from '@/icons/ArrowSide';
+import ArrowLeft from '@/icons/ArrowLeft';
+import ArrowRight from '@/icons/ArrowRight';
 import Search from '@/icons/Search';
 
-const buttonVariants = cva('inline-flex items-center', {
+const buttonVariants = cva('flex items-center', {
   variants: {
     variant: {
       default: '',
       primary: 'bg-blue-500 text-white',
       outline: 'border border-gray-400',
+      link: 'border-blue-400 rounded-[60px] text-[#489FC4] border border-[#489FC4]',
     },
     size: {
-      sm: 'text-sm py-1 px-3',
-      md: 'text-base py-2 px-4',
-      lg: 'text-lg py-3 px-6',
-    },
-    hasIcon: {
-      true: 'gap-2',
-      false: '',
+      sm: 'text-sm',
+      md: 'text-base',
+      lg: 'text-lg px-1 py-1 gap-5 w-[190px] h-[50px]',
     },
   },
   defaultVariants: {
     variant: 'default',
     size: 'md',
-    hasIcon: false,
   },
 });
 
-type IconType = 'arrowButton' | 'arrowSliderLeft' | 'arrowSliderRight' | 'search';
+type IconType = 'arrowSide' | 'arrowLeft' | 'arrowRight' | 'search';
 
 const iconMap: Record<IconType, React.ReactNode> = {
-  arrowButton: <ArrowButton />,
-  arrowSliderLeft: <ArrowSliderLeft />,
-  arrowSliderRight: <ArrowSliderRight />,
+  arrowSide: <ArrowSide />,
+  arrowLeft: <ArrowLeft />,
+  arrowRight: <ArrowRight />,
   search: <Search />,
 };
 
@@ -56,8 +52,8 @@ const Button: React.FC<ButtonProps> = ({
   const hasIcon = Boolean(iconType);
 
   return (
-    <button className={clsx(buttonVariants({ variant, size, hasIcon }), className)} {...props}>
-      {hasIcon && <span className="w-5 h-5 flex-shrink-0">{iconMap[iconType!]}</span>}
+    <button className={clsx(buttonVariants({ variant, size }), className)} {...props}>
+      {hasIcon && <span className="bg-[#489FC4] p-4 rounded-[60px]">{iconMap[iconType!]}</span>}
       {children}
     </button>
   );
