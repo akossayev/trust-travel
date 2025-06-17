@@ -6,26 +6,29 @@ import ArrowLeft from '@/icons/ArrowLeft';
 import ArrowRight from '@/icons/ArrowRight';
 import Search from '@/icons/Search';
 
-const buttonVariants = cva('flex items-center', {
+const buttonVariants = cva('flex items-center ', {
   variants: {
     variant: {
       default: '',
-      primary: 'bg-blue-500 text-white',
-      outline: 'border border-gray-400',
-      link: 'border-blue-400 rounded-[60px] text-[#489FC4] border border-[#489FC4]',
+      link: 'border-blue-400 rounded-[60px] text-[#489FC4] border border-[#489FC4] sm:bg-white/90',
+      primaryWhite: 'bg-white py-[14px] rounded-[60px] justify-center text-[#747474] text-sm',
+      primaryOutline:
+        'border border-white text-white py-[14px] rounded-[60px] text-sm justify-center',
+      primaryBlue: '',
+      primarySilver: '',
+      primaryBlueWhite: '',
+      primaryTransperent: 'bg-white/50 text-white py-[10px] rounded-[60px] text-sm justify-center',
     },
     size: {
-      sm: 'text-sm',
-      md: 'text-base',
-      lg: 'text-lg px-1 py-1 gap-5 w-[190px] h-[50px]',
+      base: 'gap-5 p-1',
+      custom: '',
     },
   },
   defaultVariants: {
     variant: 'default',
-    size: 'md',
+    size: 'base',
   },
 });
-
 type IconType = 'arrowSide' | 'arrowLeft' | 'arrowRight' | 'search';
 
 const iconMap: Record<IconType, React.ReactNode> = {
@@ -53,7 +56,11 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button className={clsx(buttonVariants({ variant, size }), className)} {...props}>
-      {hasIcon && <span className="bg-[#489FC4] p-4 rounded-[60px]">{iconMap[iconType!]}</span>}
+      {hasIcon && (
+        <span className={`${iconType === 'search' ? '' : 'bg-[#489FC4] p-4 rounded-[60px]'}`}>
+          {iconMap[iconType!]}
+        </span>
+      )}
       {children}
     </button>
   );

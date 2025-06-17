@@ -19,9 +19,8 @@ export default function BlockFirst() {
           </div>
           <Button
             variant="link"
-            size="lg"
             iconType="arrowSide"
-            className="absolute bottom-0 left-1/2 -translate-x-1/2 sm:static sm:-translate-x-0 sm:bg-white/90">
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 sm:static sm:-translate-x-0 w-[190px] h-[50px] ">
             Выбрать Тур
           </Button>
         </div>
